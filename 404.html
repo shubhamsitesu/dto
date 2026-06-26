@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found | DataoAI</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore DataoAI's AI-powered data analytics platform or return to our homepage.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.dataoai.com/404.html">
+    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="404 - Page Not Found | DataoAI">
+    <meta property="og:description" content="The page you're looking for doesn't exist. Explore DataoAI's AI-powered data analytics platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dataoai.com/404.html">
+    <meta property="og:image" content="https://www.dataoai.com/og-image.jpg">
+    <meta property="og:site_name" content="DataoAI">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234F46E5'/><text x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial,sans-serif' font-weight='bold'>DA</text></svg>">
+
+    <style>
+        /* ============ COPY OF YOUR SITE'S CSS VARIABLES ============ */
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #3730A3;
+            --primary-light: #818CF8;
+            --primary-glow: rgba(79, 70, 229, 0.35);
+            --secondary: #06B6D4;
+            --bg-primary: #0B0C15;
+            --bg-surface: #11131F;
+            --bg-card: #161825;
+            --border-color: #1E2032;
+            --text-primary: #E2E8F0;
+            --text-secondary: #94A3B8;
+            --text-heading: #FFFFFF;
+            --text-muted: #94A3B8;
+            --gradient-1: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #06B6D4 100%);
+            --gradient-2: linear-gradient(135deg, #06B6D4 0%, #4F46E5 100%);
+            --shadow-btn: 0 6px 25px rgba(79, 70, 229, 0.35);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #F8FAFC;
+            --bg-surface: #FFFFFF;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --text-primary: #1E293B;
+            --text-secondary: #475569;
+            --text-heading: #0F172A;
+            --text-muted: #64748B;
+            --primary-glow: rgba(79, 70, 229, 0.2);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            transition: background-color 0.35s, color 0.35s;
+            background-image:
+                radial-gradient(ellipse at 20% 0%, var(--primary-glow) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 100%, rgba(6, 182, 212, 0.04) 0%, transparent 60%);
+            background-attachment: fixed;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: background 0.35s, border-color 0.35s;
+        }
+
+        .error-code {
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            transition: all var(--transition);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: #FFFFFF;
+            box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(79, 70, 229, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-heading);
+            border: 1.5px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-light);
+            background: rgba(255,255,255,0.03);
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-note a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-message">
+            Oops! The page you're looking for has been moved,<br>
+            deleted, or never existed. Let’s get you back on track.
+        </p>
+        <div class="error-actions">
+            <a href="/" class="btn btn-primary">🏠 Back to Homepage</a>
+            <a href="/#contact" class="btn btn-outline">📬 Contact Us</a>
+        </div>
+        <p class="footer-note">
+            If you think this is a mistake, <a href="mailto:hello@dataoai.com">email us</a>.
+        </p>
+    </div>
+
+    <!-- Automatically apply saved theme (dark/light) -->
+    <script>
+        (function() {
+            const html = document.documentElement;
+            const stored = localStorage.getItem('dataoai-theme-preference');
+            if (stored === 'light' || stored === 'dark') {
+                html.setAttribute('data-theme', stored);
+            } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+                html.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+
+</body>
+</html>
