@@ -1,215 +1,365 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>404 - Page Not Found | DataoAI</title>
-    <meta name="description" content="The page you're looking for doesn't exist. Explore DataoAI's AI-powered data analytics platform or return to our homepage.">
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 🔥 ADVANCED SEO META TAGS FOR 404 PAGE -->
+    <!-- ═══════════════════════════════════════════ -->
+    <title>Page Not Found (404) | ConsumerAdvice.in - India's Consumer Guide</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Explore our consumer advice, buying guides, complaint filing help, and expert reviews instead.">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://www.dataoai.com/404.html">
-    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#FF6B35">
+    <link rel="canonical" href="https://www.consumeradvice.in/404.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="404 - Page Not Found | DataoAI">
-    <meta property="og:description" content="The page you're looking for doesn't exist. Explore DataoAI's AI-powered data analytics platform.">
+    <meta property="og:title" content="Page Not Found | ConsumerAdvice.in">
+    <meta property="og:description" content="Sorry, this page is missing. Discover helpful consumer resources on our homepage.">
+    <meta property="og:url" content="https://www.consumeradvice.in/404.html">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.dataoai.com/404.html">
-    <meta property="og:image" content="https://www.dataoai.com/og-image.jpg">
-    <meta property="og:site_name" content="DataoAI">
+    <meta property="og:image" content="https://www.consumeradvice.in/images/og-image.jpg">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234F46E5'/><text x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='36' font-family='Arial,sans-serif' font-weight='bold'>DA</text></svg>">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="404 Not Found | ConsumerAdvice.in">
+    <meta name="twitter:description" content="This page isn't available. Visit our homepage for consumer advice and complaint help.">
+
+    <!-- JSON-LD Structured Data (WebSite only) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.consumeradvice.in/#website",
+            "url": "https://www.consumeradvice.in",
+            "name": "ConsumerAdvice.in",
+            "description": "India's #1 Consumer Rights & Complaint Guide",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://www.consumeradvice.in/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* ============ COPY OF YOUR SITE'S CSS VARIABLES ============ */
         :root {
-            --primary: #4F46E5;
-            --primary-dark: #3730A3;
-            --primary-light: #818CF8;
-            --primary-glow: rgba(79, 70, 229, 0.35);
-            --secondary: #06B6D4;
-            --bg-primary: #0B0C15;
-            --bg-surface: #11131F;
-            --bg-card: #161825;
-            --border-color: #1E2032;
-            --text-primary: #E2E8F0;
-            --text-secondary: #94A3B8;
-            --text-heading: #FFFFFF;
-            --text-muted: #94A3B8;
-            --gradient-1: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #06B6D4 100%);
-            --gradient-2: linear-gradient(135deg, #06B6D4 0%, #4F46E5 100%);
-            --shadow-btn: 0 6px 25px rgba(79, 70, 229, 0.35);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            --primary: #FF6B35;
+            --primary-dark: #E55A25;
+            --primary-light: #FFF0E8;
+            --secondary: #1A1A2E;
+            --secondary-light: #16213E;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --gray-100: #F5F5F5;
+            --gray-200: #EEEEEE;
+            --gray-500: #9E9E9E;
+            --gray-600: #757575;
+            --gray-700: #616161;
+            --gray-900: #212121;
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.12);
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+            --font-ui: 'Inter', sans-serif;
         }
 
-        [data-theme="light"] {
-            --bg-primary: #F8FAFC;
-            --bg-surface: #FFFFFF;
-            --bg-card: #FFFFFF;
-            --border-color: #E2E8F0;
-            --text-primary: #1E293B;
-            --text-secondary: #475569;
-            --text-heading: #0F172A;
-            --text-muted: #64748B;
-            --primary-glow: rgba(79, 70, 229, 0.2);
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: var(--font-sans);
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
+            font-family: var(--font-body);
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff5f0 100%);
+            color: var(--gray-900);
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            padding: 2rem;
-            transition: background-color 0.35s, color 0.35s;
-            background-image:
-                radial-gradient(ellipse at 20% 0%, var(--primary-glow) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 100%, rgba(6, 182, 212, 0.04) 0%, transparent 60%);
-            background-attachment: fixed;
+            text-align: center;
+            padding: 40px 24px;
+            -webkit-font-smoothing: antialiased;
         }
 
         .error-container {
-            text-align: center;
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 3rem 2rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            transition: background 0.35s, border-color 0.35s;
+            animation: fadeInUp 0.8s ease;
         }
 
-        .error-code {
-            font-size: clamp(5rem, 15vw, 10rem);
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-icon {
+            font-size: 7rem;
+            margin-bottom: 20px;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+            filter: drop-shadow(0 8px 20px rgba(255, 107, 53, 0.25));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
             font-weight: 900;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            line-height: 1;
-            margin-bottom: 1rem;
+            color: var(--secondary);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
         }
 
-        .error-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-heading);
-            margin-bottom: 1rem;
+        h1 span {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 107, 53, 0.2);
+            border-radius: 4px;
+            z-index: -1;
         }
 
-        .error-message {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 2.5rem;
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--gray-600);
+            margin-bottom: 30px;
+            font-weight: 500;
+            line-height: 1.6;
         }
 
-        .error-actions {
+        .search-box {
             display: flex;
-            gap: 1rem;
+            max-width: 450px;
+            margin: 0 auto 35px;
+            background: var(--white);
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+        .search-box:focus-within {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-xl);
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 16px 22px;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            outline: none;
+            color: var(--gray-900);
+        }
+        .search-box input::placeholder {
+            color: var(--gray-500);
+        }
+        .search-box button {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0 28px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
+        }
+        .search-box button:hover {
+            background: var(--primary-dark);
         }
 
-        .btn {
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .quick-link {
+            background: var(--white);
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--gray-700);
+            font-weight: 600;
+            font-size: 0.95rem;
+            font-family: var(--font-ui);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: var(--transition);
+            border: 2px solid transparent;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.8rem;
-            border-radius: 50px;
+            gap: 6px;
+        }
+        .quick-link:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(255,107,53,0.2);
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 14px 30px;
+            border-radius: 30px;
             font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            border: none;
             text-decoration: none;
-            transition: all var(--transition);
-            letter-spacing: 0.01em;
+            font-size: 1rem;
+            font-family: var(--font-ui);
+            transition: var(--transition);
+            box-shadow: 0 8px 22px rgba(255,107,53,0.35);
+            margin-top: 10px;
         }
-
-        .btn-primary {
-            background: var(--gradient-1);
-            color: #FFFFFF;
-            box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(79, 70, 229, 0.5);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--text-heading);
-            border: 1.5px solid var(--border-color);
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary-light);
-            background: rgba(255,255,255,0.03);
+        .btn-home:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(255,107,53,0.5);
         }
 
         .footer-note {
-            margin-top: 2rem;
+            margin-top: 40px;
             font-size: 0.85rem;
-            color: var(--text-muted);
+            color: var(--gray-500);
+            font-family: var(--font-ui);
         }
-
         .footer-note a {
-            color: var(--primary-light);
+            color: var(--primary);
             text-decoration: none;
+            font-weight: 600;
         }
-
         .footer-note a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+            .error-icon {
+                font-size: 5rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .search-box {
+                flex-direction: column;
+                border-radius: var(--radius-lg);
+            }
+            .search-box input {
+                border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            }
+            .search-box button {
+                padding: 14px;
+                border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+                justify-content: center;
+            }
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .quick-link {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
-
     <div class="error-container">
-        <div class="error-code">404</div>
-        <h1 class="error-title">Page Not Found</h1>
-        <p class="error-message">
-            Oops! The page you're looking for has been moved,<br>
-            deleted, or never existed. Let’s get you back on track.
+        <!-- Animated icon -->
+        <span class="error-icon" aria-hidden="true">🔍❓</span>
+
+        <!-- Main heading -->
+        <h1>Oops! <span>Page Not Found</span></h1>
+
+        <!-- Subtitle -->
+        <p class="subtitle">
+            The page you're looking for doesn't exist or has been moved.<br>
+            But don't worry – we've got plenty of consumer advice waiting for you!
         </p>
-        <div class="error-actions">
-            <a href="/" class="btn btn-primary">🏠 Back to Homepage</a>
-            <a href="/#contact" class="btn btn-outline">📬 Contact Us</a>
+
+        <!-- Search suggestion (simulates site search) -->
+        <form class="search-box" action="/search/" method="get" aria-label="Search ConsumerAdvice.in">
+            <input type="text" name="q" placeholder="Search for consumer tips, reviews, rights..." aria-label="Search query" autofocus>
+            <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+
+        <!-- Quick helpful links -->
+        <div class="quick-links">
+            <a href="/consumer-rights/" class="quick-link"><i class="fas fa-balance-scale"></i> Know Your Rights</a>
+            <a href="/complaints/" class="quick-link"><i class="fas fa-file-signature"></i> File a Complaint</a>
+            <a href="/buying-guides/" class="quick-link"><i class="fas fa-shopping-cart"></i> Buying Guides</a>
+            <a href="/reviews/" class="quick-link"><i class="fas fa-star"></i> Product Reviews</a>
+            <a href="/blog/" class="quick-link"><i class="fas fa-newspaper"></i> Latest Articles</a>
         </div>
+
+        <!-- Primary call to action -->
+        <a href="/" class="btn-home"><i class="fas fa-home"></i> Back to Homepage</a>
+
+        <!-- Footer note with contact -->
         <p class="footer-note">
-            If you think this is a mistake, <a href="mailto:hello@dataoai.com">email us</a>.
+            Still lost? <a href="/contact/">Contact our support team</a> or call <strong>1800-11-4000</strong> (National Consumer Helpline).
         </p>
     </div>
 
-    <!-- Automatically apply saved theme (dark/light) -->
+    <!-- Simple script for search form handling (optional) -->
     <script>
         (function() {
-            const html = document.documentElement;
-            const stored = localStorage.getItem('dataoai-theme-preference');
-            if (stored === 'light' || stored === 'dark') {
-                html.setAttribute('data-theme', stored);
-            } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-                html.setAttribute('data-theme', 'light');
-            }
+            // Pre-focus the search input already handled with autofocus
+            // If needed, you can redirect search to your actual search page
+            const form = document.querySelector('.search-box');
+            form.addEventListener('submit', function(e) {
+                const input = form.querySelector('input');
+                if (!input.value.trim()) {
+                    e.preventDefault();
+                    input.focus();
+                }
+            });
+            console.log('📄 404 page loaded – ready to help lost visitors.');
         })();
     </script>
-
 </body>
 </html>
