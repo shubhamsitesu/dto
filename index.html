@@ -435,6 +435,7 @@
             font-size: 1.8rem;
             color: var(--secondary);
             padding: 8px;
+            line-height: 1;
         }
 
         /* ═══════════════════════════════════════════ */
@@ -1249,7 +1250,7 @@
                     <span class="tagline">India's Trusted Consumer Guide</span>
                 </div>
             </a>
-            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <nav>
@@ -1619,7 +1620,7 @@
     </button>
 
     <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 JAVASCRIPT - ADVANCED INTERACTIONS -->
+    <!-- 🔥 JAVASCRIPT - FIXED MOBILE MENU & MORE -->
     <!-- ═══════════════════════════════════════════ -->
     <script>
         (function() {
@@ -1640,52 +1641,72 @@
             let lastScroll = 0;
             window.addEventListener('scroll', () => {
                 const currentScroll = window.pageYOffset;
-
-                // Add shadow on scroll
                 if (currentScroll > 50) {
                     header.classList.add('scrolled');
                 } else {
                     header.classList.remove('scrolled');
                 }
-
-                // Back to top button visibility
                 if (currentScroll > 500) {
                     backToTop.classList.add('visible');
                 } else {
                     backToTop.classList.remove('visible');
                 }
-
                 lastScroll = currentScroll;
             }, { passive: true });
 
             // ═══════════════════════════════════
-            // MOBILE HAMBURGER MENU
+            // MOBILE MENU TOGGLE (FIXED)
             // ═══════════════════════════════════
-            hamburger.addEventListener('click', () => {
-                const isOpen = navLinks.classList.toggle('open');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                hamburger.innerHTML = isOpen ?
-                    '<i class="fas fa-times"></i>' :
-                    '<i class="fas fa-bars"></i>';
-            });
-
-            // Close menu on link click
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('open');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-
-            // Close menu on outside click
-            document.addEventListener('click', (e) => {
-                if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            function toggleMenu(force) {
+                const isOpen = force !== undefined ? force : !navLinks.classList.contains('open');
+                if (isOpen) {
+                    navLinks.classList.add('open');
+                    hamburger.setAttribute('aria-expanded', 'true');
+                    hamburger.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
                     navLinks.classList.remove('open');
                     hamburger.setAttribute('aria-expanded', 'false');
                     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
                 }
+            }
+
+            // Click on hamburger
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent document click from immediately closing
+                toggleMenu();
             });
+
+            // Touch support for mobile
+            hamburger.addEventListener('touchstart', function(e) {
+                e.preventDefault(); // Improve responsiveness on touch devices
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            // Close menu when clicking on a link inside
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu(false);
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (navLinks.classList.contains('open') &&
+                    !hamburger.contains(e.target) &&
+                    !navLinks.contains(e.target)) {
+                    toggleMenu(false);
+                }
+            });
+
+            // Also close on outside touch
+            document.addEventListener('touchstart', function(e) {
+                if (navLinks.classList.contains('open') &&
+                    !hamburger.contains(e.target) &&
+                    !navLinks.contains(e.target)) {
+                    toggleMenu(false);
+                }
+            }, { passive: true });
 
             // ═══════════════════════════════════
             // FAQ ACCORDION
@@ -1694,20 +1715,15 @@
                 const question = item.querySelector('.faq-question');
                 question.addEventListener('click', () => {
                     const isActive = item.classList.contains('active');
-                    // Close all
                     faqItems.forEach(f => {
                         f.classList.remove('active');
-                        f.querySelector('.faq-question').setAttribute('aria-expanded',
-                            'false');
+                        f.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
                     });
-                    // Open clicked (if wasn't already open)
                     if (!isActive) {
                         item.classList.add('active');
                         question.setAttribute('aria-expanded', 'true');
                     }
                 });
-
-                // Keyboard accessibility
                 question.addEventListener('keydown', (e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
@@ -1720,30 +1736,23 @@
             // BACK TO TOP
             // ═══════════════════════════════════
             backToTop.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
             // ═══════════════════════════════════
-            // NEWSLETTER FORM SUBMISSION
+            // NEWSLETTER FORM
             // ═══════════════════════════════════
             newsletterForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const emailInput = newsletterForm.querySelector('input[type="email"]');
                 const email = emailInput.value.trim();
-
                 if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                    // Simulate subscription
                     const btn = newsletterForm.querySelector('button');
                     const originalText = btn.textContent;
                     btn.textContent = '✅ Subscribed!';
                     btn.style.background = '#00C853';
                     btn.disabled = true;
                     emailInput.value = '';
-
-                    // Track event (simulated)
                     console.log('📧 Newsletter subscription:', email);
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'newsletter_signup', {
@@ -1751,7 +1760,6 @@
                             'event_label': 'homepage_newsletter'
                         });
                     }
-
                     setTimeout(() => {
                         btn.textContent = originalText;
                         btn.style.background = '';
@@ -1760,68 +1768,37 @@
                 } else {
                     emailInput.style.borderColor = '#FF1744';
                     emailInput.focus();
-                    setTimeout(() => {
-                        emailInput.style.borderColor = '';
-                    }, 2000);
+                    setTimeout(() => { emailInput.style.borderColor = ''; }, 2000);
                 }
             });
 
             // ═══════════════════════════════════
-            // CATEGORY CARD HOVER EFFECT (Touch)
-            // ═══════════════════════════════════
-            categoryCards.forEach(card => {
-                card.addEventListener('touchstart', function() {
-                    this.style.transform = 'translateY(-6px)';
-                }, { passive: true });
-                card.addEventListener('touchend', function() {
-                    this.style.transform = '';
-                }, { passive: true });
-            });
-
-            // ═══════════════════════════════════
-            // INTERSECTION OBSERVER FOR ANALYTICS
+            // INTERSECTION OBSERVER (ANALYTICS)
             // ═══════════════════════════════════
             if ('IntersectionObserver' in window) {
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.3
-                };
-
+                const observerOptions = { root: null, rootMargin: '0px', threshold: 0.3 };
                 const observerCallback = (entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            const section = entry.target;
-                            const sectionId = section.id || section.getAttribute(
-                                'aria-labelledby') || 'unknown';
+                            const sectionId = entry.target.id || entry.target.getAttribute('aria-labelledby') || 'unknown';
                             console.log('👁️ Section viewed:', sectionId);
-                            // Analytics tracking would go here
                             if (typeof gtag !== 'undefined') {
                                 gtag('event', 'section_view', {
                                     'event_category': 'scroll_depth',
                                     'event_label': sectionId
                                 });
                             }
-                            observer.unobserve(section);
+                            observer.unobserve(entry.target);
                         }
                     });
                 };
-
                 const observer = new IntersectionObserver(observerCallback, observerOptions);
                 document.querySelectorAll('.section, .hero, .newsletter-section').forEach(section => {
                     observer.observe(section);
                 });
             }
 
-            // ═══════════════════════════════════
-            // PERFORMANCE: LAZY LOAD MONITORING
-            // ═══════════════════════════════════
-            console.log('🚀 ConsumerAdvice.in - Page loaded successfully');
-            console.log('📊 SEO Structured Data: Organization, Website, BreadcrumbList, FAQPage - All Active');
-            console.log('🔍 Meta Tags: Open Graph, Twitter Cards, Geo Tags - All Configured');
-            console.log('📱 Responsive: Mobile-First Design Active');
-            console.log('♿ Accessibility: ARIA labels, keyboard navigation enabled');
-
+            console.log('🚀 ConsumerAdvice.in - Mobile menu fixed & ready');
         })();
     </script>
 </body>
