@@ -1,1805 +1,417 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en-IN" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>Date Calculator – Days Between Dates, Add or Subtract Days, Age | DateCalculator.in</title>
+<meta name="description" content="Free Date Calculator for India. Find days between two dates, add or subtract days, months and years, calculate age, weeks and working days. Fast, accurate, no signup.">
+<meta name="keywords" content="date calculator, date calculator online, days between dates, date difference calculator, add days to date, age calculator, date calculator India">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="DateCalculator.in">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1426" media="(prefers-color-scheme: dark)">
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="India">
+<link rel="canonical" href="https://datecalculator.in/">
+<link rel="alternate" hreflang="en-IN" href="https://datecalculator.in/">
+<link rel="alternate" hreflang="x-default" href="https://datecalculator.in/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📅%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DateCalculator.in">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Date Calculator – Days Between Dates, Add/Subtract Days, Age">
+<meta property="og:description" content="Free online Date Calculator for India. Calculate days between dates, add or subtract days, months and years, and find age instantly.">
+<meta property="og:url" content="https://datecalculator.in/">
+<meta property="og:image" content="https://datecalculator.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Date Calculator by DateCalculator.in">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Date Calculator – Days Between Dates">
+<meta name="twitter:description" content="Free Date Calculator: days between dates, add or subtract days, age, working days.">
+<meta name="twitter:image" content="https://datecalculator.in/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<script>try{var s=localStorage.getItem('dc-theme');if(s==='light'||s==='dark')document.documentElement.dataset.theme=s}catch(e){}</script>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 ADVANCED SEO META TAGS FOR consumeradvice.in -->
-    <!-- ═══════════════════════════════════════════ -->
-    <title>ConsumerAdvice.in - India's #1 Consumer Rights & Complaint Guide | Expert Reviews & Tips</title>
-    <meta name="description" content="ConsumerAdvice.in is India's most trusted consumer advice portal. Get expert buying guides, complaint resolution tips, product reviews, and know your consumer rights under the Consumer Protection Act 2019. Covering electronics, banking, insurance, e-commerce, telecom, automobiles & more.">
-    <meta name="keywords" content="consumer advice India, consumer rights, consumer complaint, product reviews India, buying guide, consumer protection act, file consumer complaint, online shopping tips India, banking complaints, insurance claim help, gadget reviews India, best products India, consumer forum, NCDRC, consumer helpline">
-    <meta name="author" content="ConsumerAdvice.in">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="bingbot" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="geo.region" content="IN">
-    <meta name="geo.country" content="India">
-    <meta name="geo.placename" content="India">
-    <meta name="target" content="all">
-    <meta name="audience" content="Indian consumers">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="1 day">
-    <meta name="distribution" content="global">
-    <meta name="theme-color" content="#FF6B35">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="ConsumerAdvice.in">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"Organization","@id":"https://datecalculator.in/#org","name":"DateCalculator.in","url":"https://datecalculator.in/","logo":{"@type":"ImageObject","url":"https://datecalculator.in/logo.png","width":512,"height":512},"areaServed":{"@type":"Country","name":"India"},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"hello@datecalculator.in","areaServed":"IN","availableLanguage":["English","Hindi"]}},
+  {"@type":"WebSite","@id":"https://datecalculator.in/#website","url":"https://datecalculator.in/","name":"Date Calculator","alternateName":"DateCalculator.in","inLanguage":"en-IN","publisher":{"@id":"https://datecalculator.in/#org"}},
+  {"@type":"WebPage","@id":"https://datecalculator.in/#webpage","url":"https://datecalculator.in/","name":"Date Calculator – Days Between Dates, Add or Subtract Days, Age","isPartOf":{"@id":"https://datecalculator.in/#website"},"about":{"@id":"https://datecalculator.in/#app"},"inLanguage":"en-IN","datePublished":"2026-11-25","dateModified":"2026-11-25","breadcrumb":{"@id":"https://datecalculator.in/#crumbs"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://datecalculator.in/og-image.png"},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".lead"]}},
+  {"@type":"BreadcrumbList","@id":"https://datecalculator.in/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Date Calculator","item":"https://datecalculator.in/"}]},
+  {"@type":"SiteNavigationElement","name":["Calculator","How it works","Use cases","Reference","FAQ"],"url":["https://datecalculator.in/#calculator","https://datecalculator.in/#how","https://datecalculator.in/#uses","https://datecalculator.in/#reference","https://datecalculator.in/#faq"]},
+  {"@type":"WebApplication","@id":"https://datecalculator.in/#app","name":"Date Calculator","url":"https://datecalculator.in/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (Web Browser)","browserRequirements":"Requires JavaScript","inLanguage":"en-IN","isAccessibleForFree":true,"description":"Online Date Calculator to find days between two dates, add or subtract days, months and years, and calculate age.","featureList":["Days between two dates","Add or subtract days, months, years","Age calculator","Weeks and working days count","Light, dark and automatic theme","Works on mobile and desktop"],"offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"audience":{"@type":"Audience","geographicArea":{"@type":"Country","name":"India"}},"publisher":{"@id":"https://datecalculator.in/#org"}},
+  {"@type":"HowTo","name":"How to use the Date Calculator","totalTime":"PT10S","tool":{"@type":"HowToTool","name":"DateCalculator.in"},"step":[
+   {"@type":"HowToStep","position":1,"name":"Choose a mode","text":"Pick Days between dates, Add or subtract, or Age."},
+   {"@type":"HowToStep","position":2,"name":"Select your dates","text":"Choose the dates and enter any days, months or years."},
+   {"@type":"HowToStep","position":3,"name":"Click Calculate","text":"Press the Calculate button."},
+   {"@type":"HowToStep","position":4,"name":"Read the result","text":"See years, months, days, total days, weeks and working days."}]},
+  {"@type":"FAQPage","@id":"https://datecalculator.in/#faq","mainEntity":[
+   {"@type":"Question","name":"What is a Date Calculator?","acceptedAnswer":{"@type":"Answer","text":"A Date Calculator is an online tool that finds the exact difference between two dates, or works out a new date by adding or subtracting days, months or years."}},
+   {"@type":"Question","name":"How do I calculate the number of days between two dates?","acceptedAnswer":{"@type":"Answer","text":"Enter the start date and end date, then click Calculate days. You get years, months, days, total days, weeks and working days instantly."}},
+   {"@type":"Question","name":"How do I add days to a date?","acceptedAnswer":{"@type":"Answer","text":"Open the Add or subtract tab, pick the start date, choose Add, enter the days, months or years, and click Calculate date to see the new date and weekday."}},
+   {"@type":"Question","name":"Does the Date Calculator include the end date?","acceptedAnswer":{"@type":"Answer","text":"Not by default. Tick the include end date option to count both the first and the last day."}},
+   {"@type":"Question","name":"Does the Date Calculator handle leap years?","acceptedAnswer":{"@type":"Answer","text":"Yes. Leap years, including 29 February, and the different lengths of months are handled automatically."}},
+   {"@type":"Question","name":"How are working days counted?","acceptedAnswer":{"@type":"Answer","text":"Working days count Monday to Friday. Saturdays, Sundays and public holidays are not adjusted for state-wise holidays, so check your local calendar for exact business days."}},
+   {"@type":"Question","name":"How do I calculate my age in years, months and days?","acceptedAnswer":{"@type":"Answer","text":"Open the Age tab, enter your date of birth, and the calculator shows your exact age, total days lived and days left until your next birthday."}},
+   {"@type":"Question","name":"Is this Date Calculator free to use in India?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is completely free, needs no registration, uses the DD/MM/YYYY format and Indian Standard Time, and works on any phone or computer."}}
+  ]}
+ ]
+}
+</script>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.consumeradvice.in/">
+<style>
+:root{--ink:#14213d;--paper:#f3f6fb;--card:#fff;--line:#cfd8e8;--accent:#e8890c;--accent-ink:#2b1700;--muted:#4d5b78;--err:#c0392b;
+ --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e9eefb;--paper:#0d1426;--card:#152039;--line:#2b3a5e;--accent:#f5a43a;--accent-ink:#1d1100;--muted:#9fb0d3;--err:#ff8a7a}}
+:root[data-theme="dark"]{--ink:#e9eefb;--paper:#0d1426;--card:#152039;--line:#2b3a5e;--accent:#f5a43a;--accent-ink:#1d1100;--muted:#9fb0d3;--err:#ff8a7a}
+:root[data-theme="light"]{color-scheme:light}:root[data-theme="dark"]{color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.7 var(--body);transition:background .25s,color .25s}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;opacity:.35}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+h1,h2,h3{font-family:var(--head);line-height:1.12;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:800;letter-spacing:-.03em;margin:.35em 0 .15em}
+h2{font-size:clamp(1.5rem,4.5vw,2.1rem);margin-top:2.2em}
+h3{font-size:1.15rem;margin-bottom:.3em}
+a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--accent);color:var(--accent-ink);padding:8px 12px;z-index:99}
 
-    <!-- Alternate Language Tags -->
-    <link rel="alternate" hreflang="en-IN" href="https://www.consumeradvice.in/">
-    <link rel="alternate" hreflang="hi-IN" href="https://www.consumeradvice.in/hi/">
-    <link rel="alternate" hreflang="x-default" href="https://www.consumeradvice.in/">
+header.site{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:2px solid var(--ink);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;gap:10px;height:64px}
+.logo{font:800 1.2rem var(--head);text-decoration:none;margin-right:auto}
+.logo span{color:var(--accent)}
+nav#nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav#nav a{display:block;padding:8px 12px;font:600 .95rem var(--head);text-decoration:none;border-radius:4px}
+nav#nav a:hover{background:var(--line)}
+.ibtn{font:600 .85rem var(--head);border:2px solid var(--ink);background:var(--card);color:var(--ink);border-radius:4px;padding:8px 11px;cursor:pointer;min-height:40px}
+#burger{display:none;width:44px;padding:0;position:relative}
+#burger i{position:absolute;left:11px;right:11px;height:2px;background:var(--ink);transition:.2s}
+#burger i:nth-child(1){top:13px}#burger i:nth-child(2){top:19px}#burger i:nth-child(3){top:25px}
+#burger[aria-expanded=true] i:nth-child(1){top:19px;transform:rotate(45deg)}
+#burger[aria-expanded=true] i:nth-child(2){opacity:0}
+#burger[aria-expanded=true] i:nth-child(3){top:19px;transform:rotate(-45deg)}
+@media(max-width:760px){
+ #burger{display:block}
+ nav#nav{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:none;padding:8px 18px 14px}
+ nav#nav.open{display:block}
+ nav#nav ul{flex-direction:column}
+ nav#nav a{padding:12px 6px;font-size:1.05rem;border-bottom:1px solid var(--line);border-radius:0}
+}
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 OPEN GRAPH / FACEBOOK META TAGS -->
-    <!-- ═══════════════════════════════════════════ -->
-    <meta property="og:title" content="ConsumerAdvice.in - India's #1 Consumer Rights & Complaint Guide">
-    <meta property="og:description" content="Expert consumer advice, buying guides, product reviews, and complaint resolution tips for Indian consumers. Know your rights under the Consumer Protection Act 2019.">
-    <meta property="og:url" content="https://www.consumeradvice.in/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ConsumerAdvice.in">
-    <meta property="og:locale" content="en_IN">
-    <meta property="og:image" content="https://www.consumeradvice.in/images/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="ConsumerAdvice.in - India's Consumer Advice Portal">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="fb:app_id" content="YOUR_FB_APP_ID">
-    <meta property="article:publisher" content="https://www.facebook.com/consumeradviceindia">
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch;margin:0 0 1.2em}
+.today{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;padding:0;list-style:none}
+.today li{border:2px solid var(--line);background:var(--card);border-radius:4px;padding:6px 12px;font:500 .85rem var(--head);color:var(--muted)}
+.today b{color:var(--ink);font-weight:800}
+.tool{background:var(--card);border:2px solid var(--ink);border-radius:6px;box-shadow:8px 8px 0 var(--accent);padding:18px}
+.tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:2px solid var(--line);overflow-x:auto}
+.tabs button{font:600 .95rem var(--head);padding:10px 14px;border:0;background:none;color:var(--muted);cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+label{display:block;font:600 .9rem var(--head);margin-bottom:4px}
+input,select{width:100%;font:1.05rem var(--head);padding:11px 10px;border:2px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
+.chk{display:flex;gap:8px;align-items:center;margin:14px 0}
+.chk input{width:auto}.chk label{margin:0;font-weight:500}
+.btn{width:100%;font:800 1.1rem var(--head);padding:14px;border:2px solid var(--ink);border-radius:4px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.btn:active{transform:translateY(2px)}
+.panel[hidden]{display:none}
+#out{margin-top:18px;border-top:2px dashed var(--line);padding-top:16px}
+#out:empty{display:none}
+#out .big{font:800 clamp(1.5rem,6vw,2.3rem) var(--head);line-height:1.15;margin:0 0 10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.stats li{border:2px solid var(--line);border-radius:4px;padding:8px 10px;font:500 .85rem var(--head);color:var(--muted)}
+.stats b{display:block;font:800 1.3rem var(--head);color:var(--ink)}
+.err{color:var(--err);font:600 1rem var(--head)}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.quick button{font:600 .85rem var(--head);padding:6px 12px;border:2px solid var(--line);border-radius:20px;background:none;color:var(--ink);cursor:pointer}
+.toc{border-left:4px solid var(--accent);padding:4px 0 4px 16px;margin:28px 0;font:500 .95rem var(--head)}
+.toc a{margin-right:14px;display:inline-block}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{border:2px solid var(--line);background:var(--card);border-radius:4px;padding:14px 16px}
+.card p{margin:0;font-size:.98rem}
+table{width:100%;border-collapse:collapse;font:500 .95rem var(--head);background:var(--card)}
+th,td{border:2px solid var(--line);padding:8px 10px;text-align:left}
+th{background:var(--line)}
+.scroll{overflow-x:auto}
+ol.steps{padding-left:1.2em}
+.formula{border:2px dashed var(--line);padding:10px 14px;font:500 .95rem var(--head);background:var(--card)}
+details{border-bottom:2px solid var(--line);padding:12px 0}
+summary{font:600 1.1rem var(--head);cursor:pointer}
+details p{margin:.6em 0 0}
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 TWITTER CARD META TAGS -->
-    <!-- ═══════════════════════════════════════════ -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ConsumerAdviceIn">
-    <meta name="twitter:creator" content="@ConsumerAdviceIn">
-    <meta name="twitter:title" content="ConsumerAdvice.in - India's #1 Consumer Rights & Complaint Guide">
-    <meta name="twitter:description" content="Expert consumer advice, buying guides, product reviews, and complaint resolution tips for Indian consumers. Know your rights!">
-    <meta name="twitter:image" content="https://www.consumeradvice.in/images/twitter-card.jpg">
-    <meta name="twitter:image:alt" content="ConsumerAdvice.in Portal">
-
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 ADDITIONAL SEO META -->
-    <!-- ═══════════════════════════════════════════ -->
-    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
-    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
-    <meta name="yandex-verification" content="YOUR_YANDEX_CODE">
-    <meta name="p:domain_verify" content="YOUR_PINTEREST_CODE">
-    <meta name="ahrefs-site-verification" content="YOUR_AHREFS_CODE">
-
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 JSON-LD STRUCTURED DATA - ADVANCED SEO -->
-    <!-- ═══════════════════════════════════════════ -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://www.consumeradvice.in/#organization",
-            "name": "ConsumerAdvice.in",
-            "url": "https://www.consumeradvice.in",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.consumeradvice.in/images/logo.png",
-                "width": 280,
-                "height": 80
-            },
-            "description": "India's most trusted consumer advice portal providing expert buying guides, complaint resolution, product reviews, and consumer rights information.",
-            "foundingDate": "2018",
-            "founders": [{
-                "@type": "Person",
-                "name": "Consumer Advocacy Team"
-            }],
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "IN",
-                "addressLocality": "New Delhi",
-                "addressRegion": "Delhi",
-                "postalCode": "110001"
-            },
-            "contactPoint": [{
-                "@type": "ContactPoint",
-                "telephone": "+91-1800-XXX-XXXX",
-                "contactType": "customer service",
-                "areaServed": "IN",
-                "availableLanguage": ["English", "Hindi"],
-                "hoursAvailable": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                    "opens": "09:00",
-                    "closes": "18:00"
-                }
-            }],
-            "sameAs": [
-                "https://www.facebook.com/consumeradviceindia",
-                "https://twitter.com/ConsumerAdviceIn",
-                "https://www.instagram.com/consumeradviceindia",
-                "https://www.youtube.com/@ConsumerAdviceIndia",
-                "https://www.linkedin.com/company/consumeradviceindia",
-                "https://in.pinterest.com/consumeradviceindia"
-            ]
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "@id": "https://www.consumeradvice.in/#website",
-            "url": "https://www.consumeradvice.in",
-            "name": "ConsumerAdvice.in",
-            "description": "India's #1 Consumer Rights & Complaint Guide",
-            "publisher": {
-                "@id": "https://www.consumeradvice.in/#organization"
-            },
-            "inLanguage": "en-IN",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://www.consumeradvice.in/search?q={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-            }
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "@id": "https://www.consumeradvice.in/#breadcrumb",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.consumeradvice.in/"
-            }]
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "@id": "https://www.consumeradvice.in/#faq",
-            "mainEntity": [{
-                "@type": "Question",
-                "name": "How do I file a consumer complaint in India?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You can file a consumer complaint through the National Consumer Helpline (1800-11-4000), online via the e-Daakhil portal, or by approaching the District Consumer Disputes Redressal Commission. ConsumerAdvice.in provides step-by-step guidance on filing complaints under the Consumer Protection Act 2019."
-                }
-            }, {
-                "@type": "Question",
-                "name": "What are my rights as an Indian consumer?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Under the Consumer Protection Act 2019, Indian consumers have 6 fundamental rights: Right to Safety, Right to be Informed, Right to Choose, Right to be Heard, Right to Seek Redressal, and Right to Consumer Education. Visit ConsumerAdvice.in for detailed explanations of each right."
-                }
-            }, {
-                "@type": "Question",
-                "name": "How can I get a refund for a defective product bought online?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "For defective products bought online in India, first contact the seller/platform within the return window. If unresolved, escalate to the e-commerce grievance officer. As a last resort, file a complaint with the National Consumer Helpline or District Consumer Commission. ConsumerAdvice.in provides template complaint letters and detailed procedures."
-                }
-            }, {
-                "@type": "Question",
-                "name": "What is the limitation period for filing a consumer complaint?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "As per the Consumer Protection Act 2019, a consumer complaint must be filed within 2 years from the date on which the cause of action arises. However, the Commission may entertain complaints beyond this period if sufficient cause is shown for the delay."
-                }
-            }, {
-                "@type": "Question",
-                "name": "Is ConsumerAdvice.in affiliated with the government?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "ConsumerAdvice.in is an independent consumer advocacy platform. While we are not a government agency, we work closely with consumer rights organizations and provide accurate information aligned with the Consumer Protection Act 2019 and guidelines from the Ministry of Consumer Affairs, Government of India."
-                }
-            }]
-        }
-    </script>
-
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 FONTS & ICONS -->
-    <!-- ═══════════════════════════════════════════ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <style>
-        :root {
-            --primary: #FF6B35;
-            --primary-dark: #E55A25;
-            --primary-light: #FFF0E8;
-            --secondary: #1A1A2E;
-            --secondary-light: #16213E;
-            --accent: #0F3460;
-            --success: #00C853;
-            --warning: #FFD600;
-            --danger: #FF1744;
-            --white: #FFFFFF;
-            --off-white: #F8F9FA;
-            --gray-50: #FAFAFA;
-            --gray-100: #F5F5F5;
-            --gray-200: #EEEEEE;
-            --gray-300: #E0E0E0;
-            --gray-400: #BDBDBD;
-            --gray-500: #9E9E9E;
-            --gray-600: #757575;
-            --gray-700: #616161;
-            --gray-800: #424242;
-            --gray-900: #212121;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
-            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
-            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 16px;
-            --radius-xl: 20px;
-            --radius-2xl: 24px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Poppins', sans-serif;
-            --font-ui: 'Inter', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--off-white);
-            color: var(--gray-900);
-            line-height: 1.7;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 TOP BAR */
-        /* ═══════════════════════════════════════════ */
-        .top-bar {
-            background: var(--secondary);
-            color: var(--white);
-            padding: 8px 0;
-            font-size: 0.8rem;
-            font-family: var(--font-ui);
-            letter-spacing: 0.3px;
-        }
-        .top-bar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .top-bar a {
-            color: #ffb88c;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        .top-bar a:hover {
-            color: var(--white);
-            text-decoration: underline;
-        }
-        .top-bar .helpline {
-            background: var(--primary);
-            padding: 4px 14px;
-            border-radius: 20px;
-            font-weight: 600;
-            animation: pulse-helpline 2s infinite;
-        }
-        @keyframes pulse-helpline {
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.6);
-            }
-            50% {
-                box-shadow: 0 0 0 12px rgba(255, 107, 53, 0);
-            }
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 HEADER / NAVIGATION */
-        /* ═══════════════════════════════════════════ */
-        .header {
-            background: var(--white);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-lg);
-            transition: var(--transition);
-        }
-        .header.scrolled {
-            box-shadow: var(--shadow-2xl);
-        }
-        .header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 0;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            flex-shrink: 0;
-        }
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            color: var(--white);
-            font-weight: 900;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-            transition: var(--transition);
-        }
-        .logo:hover .logo-icon {
-            transform: rotate(-5deg) scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.55);
-        }
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-        .logo-text .brand {
-            font-family: var(--font-heading);
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--secondary);
-            line-height: 1.1;
-            letter-spacing: -0.5px;
-        }
-        .logo-text .brand span {
-            color: var(--primary);
-        }
-        .logo-text .tagline {
-            font-size: 0.68rem;
-            color: var(--gray-500);
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 6px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-700);
-            font-weight: 500;
-            font-size: 0.9rem;
-            padding: 8px 16px;
-            border-radius: 25px;
-            transition: var(--transition);
-            white-space: nowrap;
-            font-family: var(--font-ui);
-            letter-spacing: 0.2px;
-        }
-        .nav-links a:hover,
-        .nav-links a.active {
-            background: var(--primary-light);
-            color: var(--primary);
-            font-weight: 600;
-        }
-        .nav-links a.btn-cta {
-            background: var(--primary);
-            color: var(--white);
-            font-weight: 600;
-            padding: 10px 22px;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.35);
-            transition: var(--transition);
-        }
-        .nav-links a.btn-cta:hover {
-            background: var(--primary-dark);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
-            transform: translateY(-2px);
-        }
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.8rem;
-            color: var(--secondary);
-            padding: 8px;
-            line-height: 1;
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 HERO SECTION */
-        /* ═══════════════════════════════════════════ */
-        .hero {
-            background: linear-gradient(160deg, #0a0a1a 0%, #0d1b33 30%, #132347 60%, #0a1628 100%);
-            color: var(--white);
-            padding: 70px 0 80px;
-            position: relative;
-            overflow: hidden;
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
-            top: -150px;
-            right: -100px;
-            border-radius: 50%;
-            animation: hero-glow 8s ease-in-out infinite;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
-            bottom: -100px;
-            left: -50px;
-            border-radius: 50%;
-            animation: hero-glow 6s ease-in-out infinite reverse;
-        }
-        @keyframes hero-glow {
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 0.6;
-            }
-            50% {
-                transform: scale(1.3);
-                opacity: 1;
-            }
-        }
-        .hero .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-        .hero-content h1 {
-            font-family: var(--font-heading);
-            font-size: 3.2rem;
-            font-weight: 900;
-            line-height: 1.15;
-            margin-bottom: 18px;
-            letter-spacing: -1px;
-        }
-        .hero-content h1 .highlight {
-            color: var(--primary);
-            position: relative;
-            display: inline-block;
-        }
-        .hero-content h1 .highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 2px;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 107, 53, 0.35);
-            border-radius: 4px;
-            z-index: -1;
-        }
-        .hero-content p {
-            font-size: 1.15rem;
-            color: #c5cdd8;
-            margin-bottom: 30px;
-            max-width: 520px;
-            line-height: 1.8;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            border-radius: 30px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            cursor: pointer;
-            border: none;
-            transition: var(--transition);
-            font-family: var(--font-ui);
-            letter-spacing: 0.3px;
-            white-space: nowrap;
-        }
-        .btn-primary {
-            background: var(--primary);
-            color: var(--white);
-            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.45);
-        }
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.55);
-        }
-        .btn-outline {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-        }
-        .btn-outline:hover {
-            border-color: var(--white);
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-3px);
-        }
-        .hero-stats {
-            display: flex;
-            gap: 30px;
-            margin-top: 35px;
-            flex-wrap: wrap;
-        }
-        .hero-stat {
-            text-align: center;
-        }
-        .hero-stat .number {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: var(--primary);
-            font-family: var(--font-heading);
-            line-height: 1;
-        }
-        .hero-stat .label {
-            font-size: 0.8rem;
-            color: #8899aa;
-            margin-top: 4px;
-        }
-        .hero-image {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero-image .shield-icon {
-            font-size: 15rem;
-            color: rgba(255, 107, 53, 0.2);
-            animation: float 4s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        .hero-image .floating-card {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 15px 20px;
-            border-radius: var(--radius-lg);
-            font-size: 0.85rem;
-            font-weight: 500;
-            animation: float-card 5s ease-in-out infinite;
-            box-shadow: var(--shadow-xl);
-        }
-        .hero-image .floating-card.card-1 {
-            top: 10%;
-            right: 5%;
-            animation-delay: 0s;
-        }
-        .hero-image .floating-card.card-2 {
-            bottom: 15%;
-            left: 0%;
-            animation-delay: 2.5s;
-        }
-        @keyframes float-card {
-            0%,
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-12px) rotate(1deg);
-            }
-            75% {
-                transform: translateY(8px) rotate(-1deg);
-            }
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 SECTION STYLES */
-        /* ═══════════════════════════════════════════ */
-        .container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        .section {
-            padding: 70px 0;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .section-header .badge {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-        .section-header h2 {
-            font-family: var(--font-heading);
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--secondary);
-            letter-spacing: -0.5px;
-            margin-bottom: 10px;
-        }
-        .section-header p {
-            color: var(--gray-600);
-            font-size: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 CATEGORY GRID */
-        /* ═══════════════════════════════════════════ */
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 18px;
-        }
-        .category-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: 28px 18px;
-            text-align: center;
-            cursor: pointer;
-            transition: var(--transition);
-            border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: var(--shadow-sm);
-        }
-        .category-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-xl);
-        }
-        .category-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), #ff9a6c);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-            transform-origin: left;
-        }
-        .category-card:hover::before {
-            transform: scaleX(1);
-        }
-        .category-icon {
-            font-size: 2.8rem;
-            margin-bottom: 12px;
-            display: block;
-            transition: var(--transition);
-        }
-        .category-card:hover .category-icon {
-            transform: scale(1.15);
-        }
-        .category-card h3 {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--secondary);
-            margin-bottom: 4px;
-            font-family: var(--font-ui);
-        }
-        .category-card .count {
-            font-size: 0.75rem;
-            color: var(--gray-500);
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 FEATURED ARTICLES */
-        /* ═══════════════════════════════════════════ */
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 24px;
-        }
-        .article-card {
-            background: var(--white);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition);
-            border: 1px solid var(--gray-200);
-            display: flex;
-            flex-direction: column;
-        }
-        .article-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--primary);
-        }
-        .article-card .article-img {
-            height: 200px;
-            position: relative;
-            overflow: hidden;
-        }
-        .article-card .article-img .placeholder-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--white);
-        }
-        .bg-grad-1 {
-            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
-        }
-        .bg-grad-2 {
-            background: linear-gradient(135deg, #1a73e8, #4a9af5);
-        }
-        .bg-grad-3 {
-            background: linear-gradient(135deg, #0f9d58, #34c77b);
-        }
-        .bg-grad-4 {
-            background: linear-gradient(135deg, #7c3aed, #a78bfa);
-        }
-        .bg-grad-5 {
-            background: linear-gradient(135deg, #e91e63, #f06292);
-        }
-        .bg-grad-6 {
-            background: linear-gradient(135deg, #00bcd4, #4dd0e1);
-        }
-        .article-card .article-badge {
-            position: absolute;
-            top: 14px;
-            left: 14px;
-            background: var(--white);
-            color: var(--secondary);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            box-shadow: var(--shadow-md);
-        }
-        .article-card .article-body {
-            padding: 20px 22px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .article-card .article-body h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--secondary);
-            margin-bottom: 8px;
-            line-height: 1.4;
-            font-family: var(--font-ui);
-        }
-        .article-card .article-body p {
-            font-size: 0.88rem;
-            color: var(--gray-600);
-            margin-bottom: 14px;
-            flex: 1;
-            line-height: 1.6;
-        }
-        .article-card .article-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.78rem;
-            color: var(--gray-500);
-            font-family: var(--font-ui);
-        }
-        .article-card .read-more {
-            color: var(--primary);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: var(--transition);
-        }
-        .article-card .read-more:hover {
-            color: var(--primary-dark);
-            text-decoration: underline;
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 FAQ SECTION */
-        /* ═══════════════════════════════════════════ */
-        .faq-section {
-            background: var(--white);
-        }
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .faq-item {
-            background: var(--gray-50);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            border: 1px solid var(--gray-200);
-            transition: var(--transition);
-        }
-        .faq-item.active {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-lg);
-        }
-        .faq-question {
-            padding: 18px 24px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: var(--font-ui);
-            color: var(--secondary);
-            transition: var(--transition);
-            font-size: 0.95rem;
-            user-select: none;
-        }
-        .faq-question:hover {
-            color: var(--primary);
-        }
-        .faq-question .faq-icon {
-            transition: var(--transition);
-            color: var(--gray-400);
-            font-size: 1.1rem;
-        }
-        .faq-item.active .faq-question .faq-icon {
-            transform: rotate(180deg);
-            color: var(--primary);
-        }
-        .faq-answer {
-            padding: 0 24px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-            color: var(--gray-700);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 300px;
-            padding: 0 24px 18px;
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 NEWSLETTER */
-        /* ═══════════════════════════════════════════ */
-        .newsletter-section {
-            background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
-            color: var(--white);
-            padding: 60px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .newsletter-section::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: rgba(255, 107, 53, 0.1);
-            border-radius: 50%;
-            top: -80px;
-            right: -60px;
-        }
-        .newsletter-form {
-            display: flex;
-            gap: 10px;
-            max-width: 500px;
-            margin: 25px auto 0;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .newsletter-form input {
-            flex: 1;
-            min-width: 250px;
-            padding: 15px 20px;
-            border-radius: 30px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--white);
-            font-size: 0.95rem;
-            font-family: var(--font-ui);
-            outline: none;
-            transition: var(--transition);
-        }
-        .newsletter-form input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-        .newsletter-form input:focus {
-            border-color: var(--primary);
-            background: rgba(255, 255, 255, 0.15);
-        }
-        .newsletter-form button {
-            padding: 15px 30px;
-            border-radius: 30px;
-            background: var(--primary);
-            color: var(--white);
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 0.95rem;
-            font-family: var(--font-ui);
-            transition: var(--transition);
-            letter-spacing: 0.3px;
-        }
-        .newsletter-form button:hover {
-            background: var(--primary-dark);
-            transform: scale(1.03);
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 FOOTER */
-        /* ═══════════════════════════════════════════ */
-        .footer {
-            background: #0a0a14;
-            color: #b0b8c1;
-            padding: 60px 0 20px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 35px;
-            margin-bottom: 40px;
-        }
-        .footer-col h4 {
-            color: var(--white);
-            font-weight: 700;
-            margin-bottom: 16px;
-            font-family: var(--font-ui);
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        .footer-col ul {
-            list-style: none;
-        }
-        .footer-col ul li {
-            margin-bottom: 8px;
-        }
-        .footer-col ul li a {
-            color: #8899aa;
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: var(--transition);
-            font-family: var(--font-ui);
-        }
-        .footer-col ul li a:hover {
-            color: var(--primary);
-            padding-left: 5px;
-        }
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            font-size: 0.8rem;
-            color: #667788;
-            font-family: var(--font-ui);
-        }
-        .social-links {
-            display: flex;
-            gap: 12px;
-            margin-top: 12px;
-        }
-        .social-links a {
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.06);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #b0b8c1;
-            text-decoration: none;
-            transition: var(--transition);
-            font-size: 1rem;
-        }
-        .social-links a:hover {
-            background: var(--primary);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 BACK TO TOP */
-        /* ═══════════════════════════════════════════ */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 48px;
-            height: 48px;
-            background: var(--primary);
-            color: var(--white);
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.3rem;
-            z-index: 999;
-            box-shadow: var(--shadow-xl);
-            transition: var(--transition);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(20px);
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .back-to-top:hover {
-            background: var(--primary-dark);
-            transform: translateY(-5px);
-        }
-
-        /* ═══════════════════════════════════════════ */
-        /* 🔥 RESPONSIVE */
-        /* ═══════════════════════════════════════════ */
-        @media (max-width: 1024px) {
-            .hero .container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .hero-content p {
-                margin: 0 auto 30px;
-            }
-            .hero-buttons {
-                justify-content: center;
-            }
-            .hero-stats {
-                justify-content: center;
-            }
-            .hero-image {
-                order: -1;
-            }
-            .hero-image .shield-icon {
-                font-size: 10rem;
-            }
-            .hero-content h1 {
-                font-size: 2.4rem;
-            }
-            .nav-links {
-                gap: 2px;
-            }
-            .nav-links a {
-                padding: 6px 10px;
-                font-size: 0.8rem;
-            }
-            .categories-grid {
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                gap: 12px;
-            }
-            .articles-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--white);
-                flex-direction: column;
-                padding: 16px;
-                box-shadow: var(--shadow-2xl);
-                border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-                z-index: 999;
-                gap: 4px;
-            }
-            .nav-links.open {
-                display: flex;
-            }
-            .nav-links a {
-                padding: 12px 16px;
-                border-radius: var(--radius-sm);
-                width: 100%;
-            }
-            .hero {
-                padding: 40px 0 50px;
-                min-height: auto;
-            }
-            .hero-content h1 {
-                font-size: 1.9rem;
-            }
-            .hero-stats {
-                gap: 18px;
-            }
-            .hero-stat .number {
-                font-size: 1.6rem;
-            }
-            .section-header h2 {
-                font-size: 1.8rem;
-            }
-            .categories-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-            }
-            .category-card {
-                padding: 18px 10px;
-            }
-            .category-icon {
-                font-size: 2rem;
-            }
-            .category-card h3 {
-                font-size: 0.78rem;
-            }
-            .articles-grid {
-                grid-template-columns: 1fr;
-            }
-            .top-bar .container {
-                flex-direction: column;
-                text-align: center;
-            }
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .categories-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .hero-content h1 {
-                font-size: 1.5rem;
-            }
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-            .newsletter-form {
-                flex-direction: column;
-            }
-            .newsletter-form input,
-            .newsletter-form button {
-                width: 100%;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+footer.site{margin-top:70px;background:var(--card);color:var(--ink);border-top:2px solid var(--ink);padding:40px 0 calc(24px + env(safe-area-inset-bottom,0px));font:500 .95rem/1.6 var(--head)}
+footer.site a{color:var(--ink);text-decoration-color:var(--accent)}
+.fcols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+@media(max-width:760px){.fcols{grid-template-columns:1fr 1fr}.fcols>div:first-child{grid-column:1/-1}}
+footer h3{font-size:1rem;margin:0 0 10px;color:var(--ink);display:inline-block;border-bottom:3px solid var(--accent)}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin:6px 0}
+footer .copy{margin-top:30px;padding-top:16px;border-top:2px solid var(--line);font-size:.85rem;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
+<a class="skip" href="#calculator">Skip to Date Calculator</a>
+<header class="site">
+ <div class="wrap bar">
+  <a class="logo" href="/" aria-label="DateCalculator.in home">Date<span>Calculator</span>.in</a>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#uses">Use cases</a></li>
+    <li><a href="#reference">Reference</a></li>
+    <li><a href="#faq">FAQ</a></li>
+   </ul>
+  </nav>
+  <button class="ibtn" id="theme" type="button" aria-label="Theme: automatic (system). Click to change">◐ Auto</button>
+  <button class="ibtn" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+ </div>
+</header>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 TOP BAR -->
-    <!-- ═══════════════════════════════════════════ -->
-    <div class="top-bar">
-        <div class="container">
-            <span>🇮🇳 <strong>National Consumer Helpline:</strong> <a href="tel:1800114000" class="helpline">📞 1800-11-4000</a> | Toll-Free</span>
-            <span><a href="#">📧 support@consumeradvice.in</a> | <a href="#">हिन्दी</a> | <a href="#">ગુજરાતી</a></span>
-        </div>
-    </div>
+<main class="wrap">
+<section aria-labelledby="h1">
+ <h1 id="h1">Date Calculator</h1>
+ <p class="lead">Free online Date Calculator made for India. Find the days between two dates, add or subtract days, months and years, or work out exact age in one click.</p>
+ <ul class="today" id="today" aria-label="Today in India"></ul>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 HEADER -->
-    <!-- ═══════════════════════════════════════════ -->
-    <header class="header" id="header">
-        <div class="container">
-            <a href="/" class="logo" aria-label="ConsumerAdvice.in Home">
-                <div class="logo-icon">🛡️</div>
-                <div class="logo-text">
-                    <span class="brand">Consumer<span>Advice</span>.in</span>
-                    <span class="tagline">India's Trusted Consumer Guide</span>
-                </div>
-            </a>
-            <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="/" class="active">🏠 Home</a></li>
-                    <li><a href="/buying-guides/">📋 Buying Guides</a></li>
-                    <li><a href="/reviews/">⭐ Reviews</a></li>
-                    <li><a href="/complaints/">📝 File Complaint</a></li>
-                    <li><a href="/consumer-rights/">⚖️ Rights</a></li>
-                    <li><a href="/blog/">📰 Blog</a></li>
-                    <li><a href="/contact/" class="btn-cta">🔍 Get Advice</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <div class="tool" id="calculator">
+  <div class="tabs" role="tablist" aria-label="Date Calculator mode">
+   <button role="tab" id="t1" aria-selected="true" aria-controls="p1">Days between dates</button>
+   <button role="tab" id="t2" aria-selected="false" aria-controls="p2">Add or subtract</button>
+   <button role="tab" id="t3" aria-selected="false" aria-controls="p3">Age</button>
+  </div>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 HERO SECTION -->
-    <!-- ═══════════════════════════════════════════ -->
-    <section class="hero" aria-labelledby="hero-heading">
-        <div class="container">
-            <div class="hero-content">
-                <h1 id="hero-heading">Your <span class="highlight">Consumer Rights</span> Matter.<br>We Help You <span class="highlight">Fight Back</span>.</h1>
-                <p>India's most comprehensive consumer advice platform. Get expert guidance on product purchases, file complaints, know your legal rights under the <strong>Consumer Protection Act 2019</strong>, and make informed decisions every day.</p>
-                <div class="hero-buttons">
-                    <a href="/file-complaint/" class="btn btn-primary">📝 File a Complaint Now</a>
-                    <a href="/consumer-rights-guide/" class="btn btn-outline">📖 Know Your Rights</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="number">50,000+</span>
-                        <span class="label">Complaints Resolved</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="number">12,000+</span>
-                        <span class="label">Expert Reviews</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="number">2M+</span>
-                        <span class="label">Monthly Readers</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="number">15+</span>
-                        <span class="label">Categories</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <span class="shield-icon" aria-hidden="true">🛡️</span>
-                <div class="floating-card card-1">✅ Verified Consumer Advice</div>
-                <div class="floating-card card-2">⚖️ Consumer Protection Act 2019</div>
-            </div>
-        </div>
-    </section>
+  <div class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+   <div class="grid">
+    <div><label for="d1">Start date</label><input type="date" id="d1"></div>
+    <div><label for="d2">End date</label><input type="date" id="d2"></div>
+   </div>
+   <div class="chk"><input type="checkbox" id="inc"><label for="inc">Include end date in the count</label></div>
+   <button class="btn" id="go1" type="button">Calculate days</button>
+  </div>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 CATEGORIES SECTION -->
-    <!-- ═══════════════════════════════════════════ -->
-    <section class="section" aria-labelledby="categories-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge">📂 Wide Range Categories</span>
-                <h2 id="categories-heading">Explore Consumer Advice Categories</h2>
-                <p>Comprehensive guidance across every major consumer category in India. Click to explore detailed advice, reviews, and complaint procedures.</p>
-            </div>
-            <div class="categories-grid">
-                <a href="/category/electronics/" class="category-card" title="Electronics & Gadgets Advice">
-                    <span class="category-icon">📱</span>
-                    <h3>Electronics & Gadgets</h3>
-                    <span class="count">2,450+ articles</span>
-                </a>
-                <a href="/category/home-appliances/" class="category-card" title="Home Appliances Advice">
-                    <span class="category-icon">🏠</span>
-                    <h3>Home Appliances</h3>
-                    <span class="count">1,820+ articles</span>
-                </a>
-                <a href="/category/banking-finance/" class="category-card" title="Banking & Finance">
-                    <span class="category-icon">🏦</span>
-                    <h3>Banking & Finance</h3>
-                    <span class="count">3,100+ articles</span>
-                </a>
-                <a href="/category/insurance/" class="category-card" title="Insurance Advice">
-                    <span class="category-icon">🔒</span>
-                    <h3>Insurance</h3>
-                    <span class="count">1,650+ articles</span>
-                </a>
-                <a href="/category/ecommerce/" class="category-card" title="E-Commerce & Online Shopping">
-                    <span class="category-icon">🛒</span>
-                    <h3>E-Commerce</h3>
-                    <span class="count">2,900+ articles</span>
-                </a>
-                <a href="/category/travel-hospitality/" class="category-card" title="Travel & Hospitality">
-                    <span class="category-icon">✈️</span>
-                    <h3>Travel & Hospitality</h3>
-                    <span class="count">1,200+ articles</span>
-                </a>
-                <a href="/category/telecom/" class="category-card" title="Telecom & Internet">
-                    <span class="category-icon">📶</span>
-                    <h3>Telecom</h3>
-                    <span class="count">980+ articles</span>
-                </a>
-                <a href="/category/automobile/" class="category-card" title="Automobile Advice">
-                    <span class="category-icon">🚗</span>
-                    <h3>Automobile</h3>
-                    <span class="count">1,750+ articles</span>
-                </a>
-                <a href="/category/healthcare/" class="category-card" title="Healthcare & Medical">
-                    <span class="category-icon">🏥</span>
-                    <h3>Healthcare</h3>
-                    <span class="count">2,100+ articles</span>
-                </a>
-                <a href="/category/education/" class="category-card" title="Education & Coaching">
-                    <span class="category-icon">🎓</span>
-                    <h3>Education</h3>
-                    <span class="count">1,350+ articles</span>
-                </a>
-                <a href="/category/real-estate/" class="category-card" title="Real Estate & Housing">
-                    <span class="category-icon">🏘️</span>
-                    <h3>Real Estate</h3>
-                    <span class="count">890+ articles</span>
-                </a>
-                <a href="/category/food-beverages/" class="category-card" title="Food & Beverages">
-                    <span class="category-icon">🍽️</span>
-                    <h3>Food & Beverages</h3>
-                    <span class="count">1,100+ articles</span>
-                </a>
-            </div>
-        </div>
-    </section>
+  <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+   <div class="grid">
+    <div><label for="d4">Start date</label><input type="date" id="d4"></div>
+    <div><label for="op">Action</label><select id="op"><option value="1">Add</option><option value="-1">Subtract</option></select></div>
+   </div>
+   <div class="grid3" style="margin-top:14px">
+    <div><label for="ay">Years</label><input type="number" id="ay" min="0" value="0" inputmode="numeric"></div>
+    <div><label for="am">Months</label><input type="number" id="am" min="0" value="0" inputmode="numeric"></div>
+    <div><label for="ad">Days</label><input type="number" id="ad" min="0" value="30" inputmode="numeric"></div>
+   </div>
+   <div class="quick" aria-label="Quick presets">
+    <button type="button" data-q="30">30 days</button><button type="button" data-q="45">45 days</button><button type="button" data-q="60">60 days</button><button type="button" data-q="90">90 days</button><button type="button" data-q="180">180 days</button><button type="button" data-q="365">365 days</button>
+   </div>
+   <div style="margin-top:14px"><button class="btn" id="go2" type="button">Calculate date</button></div>
+  </div>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 LATEST ARTICLES / ADVICE -->
-    <!-- ═══════════════════════════════════════════ -->
-    <section class="section" style="background:#fafafa;" aria-labelledby="articles-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge">📰 Latest Consumer Advice</span>
-                <h2 id="articles-heading">Expert Tips & In-Depth Guides</h2>
-                <p>Stay updated with the latest consumer news, product reviews, and expert advice tailored for Indian consumers.</p>
-            </div>
-            <div class="articles-grid">
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-1">📱</div>
-                        <span class="article-badge">🔥 Trending</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>How to Identify Fake Smartphones Before Buying Online in India</h3>
-                        <p>Counterfeit smartphones are flooding Indian e-commerce platforms. Learn the 7 tell-tale signs to spot fakes and protect your hard-earned money.</p>
-                        <div class="article-meta">
-                            <span>📅 July 25, 2026</span>
-                            <a href="/blog/fake-smartphones-guide/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-2">🏦</div>
-                        <span class="article-badge">⚠️ Alert</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>RBI's New Guidelines on Unauthorized Digital Lending Apps - What Consumers Must Know</h3>
-                        <p>RBI has cracked down on illegal lending apps. Understand the new rules, how to verify legitimate lenders, and what to do if you're a victim.</p>
-                        <div class="article-meta">
-                            <span>📅 July 22, 2026</span>
-                            <a href="/blog/rbi-digital-lending-guidelines/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-3">🛒</div>
-                        <span class="article-badge">💡 Guide</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>Step-by-Step: How to File a Complaint Against Flipkart or Amazon for Defective Products</h3>
-                        <p>A complete walkthrough of the e-commerce complaint process in India, from contacting customer support to approaching the Consumer Commission.</p>
-                        <div class="article-meta">
-                            <span>📅 July 20, 2026</span>
-                            <a href="/blog/ecommerce-complaint-guide/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-4">⚖️</div>
-                        <span class="article-badge">📚 Legal</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>Consumer Protection Act 2019 vs 1986: 10 Key Changes Every Indian Should Know</h3>
-                        <p>The 2019 Act brought sweeping reforms including e-commerce rules, product liability, and mediation. Here's what's new and how it protects you better.</p>
-                        <div class="article-meta">
-                            <span>📅 July 18, 2026</span>
-                            <a href="/blog/consumer-protection-act-2019-changes/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-5">🚗</div>
-                        <span class="article-badge">🆕 Latest</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>Used Car Buying in India: Complete Checklist to Avoid Fraud & Lemon Vehicles</h3>
-                        <p>Buying a second-hand car? Use our 25-point inspection checklist, verify documents, and learn how to check for accidental or flooded vehicles.</p>
-                        <div class="article-meta">
-                            <span>📅 July 15, 2026</span>
-                            <a href="/blog/used-car-buying-checklist/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-img">
-                        <div class="placeholder-img bg-grad-6">🏥</div>
-                        <span class="article-badge">🩺 Health</span>
-                    </div>
-                    <div class="article-body">
-                        <h3>Health Insurance Claim Rejected? Here's How to Appeal and Win Your Case</h3>
-                        <p>Insurance companies reject thousands of legitimate claims. Learn the appeal process, IRDAI guidelines, and how to escalate to the Insurance Ombudsman.</p>
-                        <div class="article-meta">
-                            <span>📅 July 12, 2026</span>
-                            <a href="/blog/health-insurance-claim-appeal/" class="read-more">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+  <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+   <div class="grid">
+    <div><label for="dob">Date of birth</label><input type="date" id="dob" value="2000-01-01"></div>
+    <div><label for="asof">Age on date</label><input type="date" id="asof"></div>
+   </div>
+   <div style="margin-top:14px"><button class="btn" id="go3" type="button">Calculate age</button></div>
+  </div>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 FAQ SECTION WITH SCHEMA -->
-    <!-- ═══════════════════════════════════════════ -->
-    <section class="section faq-section" aria-labelledby="faq-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge">❓ Common Questions</span>
-                <h2 id="faq-heading">Frequently Asked Consumer Questions</h2>
-                <p>Quick answers to the most common consumer queries in India. Can't find what you're looking for? <a href="/contact/">Contact us</a>.</p>
-            </div>
-            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                <div class="faq-item active">
-                    <div class="faq-question" tabindex="0" aria-expanded="true">
-                        <span>How do I file a consumer complaint in India?</span>
-                        <i class="fas fa-chevron-down faq-icon"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You can file a consumer complaint through multiple channels: <strong>1)</strong> National Consumer Helpline at <strong>1800-11-4000</strong> (toll-free), <strong>2)</strong> Online via the <strong>e-Daakhil portal</strong> (edaakhil.nic.in), <strong>3)</strong> Approaching your local <strong>District Consumer Disputes Redressal Commission</strong>. For claims up to ₹50 lakh, approach the District Commission; up to ₹2 crore, the State Commission; and above ₹2 crore, the National Commission (NCDRC). ConsumerAdvice.in provides free templates and step-by-step guidance.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" aria-expanded="false">
-                        <span>What are the 6 consumer rights under Indian law?</span>
-                        <i class="fas fa-chevron-down faq-icon"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The Consumer Protection Act 2019 guarantees <strong>6 fundamental rights</strong>: <strong>1) Right to Safety</strong> - protection against hazardous goods, <strong>2) Right to be Informed</strong> - about quality, quantity, potency, purity, standard and price, <strong>3) Right to Choose</strong> - access to a variety of goods at competitive prices, <strong>4) Right to be Heard</strong> - consumer interests to be considered, <strong>5) Right to Seek Redressal</strong> - against unfair trade practices, <strong>6) Right to Consumer Education</strong> - to be informed about rights and remedies.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" aria-expanded="false">
-                        <span>How long does it take to resolve a consumer complaint in India?</span>
-                        <i class="fas fa-chevron-down faq-icon"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Under the Consumer Protection Act 2019, consumer commissions are required to adjudicate complaints within <strong>3 to 5 months</strong> from the date of filing (where no laboratory testing is required). However, practical timelines vary. Mediation, introduced under the 2019 Act, can resolve disputes within <strong>3 months</strong>. Complex cases at the NCDRC level may take 6-12 months. Using the e-Daakhil portal often speeds up the process.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" aria-expanded="false">
-                        <span>Can I return a product bought online if I simply don't like it?</span>
-                        <i class="fas fa-chevron-down faq-icon"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Under Indian e-commerce rules, for most products, you have a <strong>right to return within the specified return window</strong> (typically 7-30 days depending on the platform and product category). Some items like underwear, personalized goods, and perishables are non-returnable. If the seller refuses a valid return, you can escalate to the platform's grievance officer and then to the consumer commission. Always check the return policy before purchasing.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" aria-expanded="false">
-                        <span>What compensation can I claim as an Indian consumer?</span>
-                        <i class="fas fa-chevron-down faq-icon"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You can claim: <strong>1) Refund</strong> of the amount paid, <strong>2) Replacement</strong> of defective product, <strong>3) Compensation</strong> for mental agony, harassment, and physical suffering (typically ₹5,000 to ₹1,00,000+ depending on severity), <strong>4) Litigation costs</strong>, <strong>5) Removal of deficiency</strong> in service, <strong>6) Punitive damages</strong> in cases of gross negligence. The commission has wide discretion in awarding compensation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div id="out" aria-live="polite"></div>
+ </div>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 NEWSLETTER -->
-    <!-- ═══════════════════════════════════════════ -->
-    <section class="newsletter-section" aria-labelledby="newsletter-heading">
-        <div class="container">
-            <h2 id="newsletter-heading" style="font-family:var(--font-heading);font-size:2rem;font-weight:800;">📬 Get Free Consumer Alerts</h2>
-            <p style="max-width:500px;margin:10px auto;color:#c5cdd8;">Join 2 lakh+ Indian consumers receiving expert tips, scam alerts, product recall notices, and the latest consumer news directly in your inbox.</p>
-            <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
-                <input type="email" placeholder="Enter your email address" required aria-required="true">
-                <button type="submit">Subscribe Free 🔔</button>
-            </form>
-        </div>
-    </section>
+ <nav class="toc" aria-label="On this page"><strong>On this page:</strong> <a href="#how">How to use</a> <a href="#uses">Use cases</a> <a href="#formula">How it is calculated</a> <a href="#reference">Reference tables</a> <a href="#faq">FAQ</a></nav>
+</section>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 FOOTER -->
-    <!-- ═══════════════════════════════════════════ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>🛡️ ConsumerAdvice.in</h4>
-                    <p style="font-size:0.85rem;line-height:1.7;">India's most trusted independent consumer advice platform since 2018. We empower Indian consumers with knowledge, tools, and support to make informed decisions and fight for their rights.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>📂 Quick Links</h4>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/contact/">Contact</a></li>
-                        <li><a href="/careers/">Careers</a></li>
-                        <li><a href="/press/">Press & Media</a></li>
-                        <li><a href="/sitemap/">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>⚖️ Consumer Resources</h4>
-                    <ul>
-                        <li><a href="/consumer-protection-act/">Consumer Protection Act 2019</a></li>
-                        <li><a href="/national-helpline/">National Helpline Numbers</a></li>
-                        <li><a href="/complaint-letter-templates/">Complaint Letter Templates</a></li>
-                        <li><a href="/consumer-courts/">Consumer Courts Directory</a></li>
-                        <li><a href="/product-recall-alerts/">Product Recall Alerts</a></li>
-                        <li><a href="/scam-alerts/">Scam & Fraud Alerts</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>📱 Top Categories</h4>
-                    <ul>
-                        <li><a href="/category/electronics/">Electronics & Gadgets</a></li>
-                        <li><a href="/category/banking-finance/">Banking & Finance</a></li>
-                        <li><a href="/category/ecommerce/">E-Commerce Shopping</a></li>
-                        <li><a href="/category/insurance/">Insurance Claims</a></li>
-                        <li><a href="/category/telecom/">Telecom Complaints</a></li>
-                        <li><a href="/category/automobile/">Automobile Issues</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 <strong>ConsumerAdvice.in</strong> | All Rights Reserved | <a href="/privacy-policy/" style="color:#8899aa;">Privacy Policy</a> | <a href="/terms/" style="color:#8899aa;">Terms of Use</a> | <a href="/disclaimer/" style="color:#8899aa;">Disclaimer</a></p>
-                <p style="margin-top:6px;">📌 Disclaimer: ConsumerAdvice.in is an independent platform. We are not affiliated with any government agency. Information provided is for educational purposes. For legal advice, consult a qualified professional.</p>
-            </div>
-        </div>
-    </footer>
+<section aria-labelledby="how">
+ <h2 id="how">How to use this Date Calculator</h2>
+ <p>This Date Calculator gives accurate answers in seconds, right in your browser. Whether you need the number of days between two dates, a deadline 90 days from today, or an exact age, follow these steps.</p>
+ <ol class="steps">
+  <li><strong>Choose a mode.</strong> Days between dates, Add or subtract, or Age.</li>
+  <li><strong>Select dates.</strong> Use the date pickers. Today’s date is filled in using Indian Standard Time (IST).</li>
+  <li><strong>Click Calculate.</strong> You get the result in years, months and days, plus total days, weeks, working days and hours.</li>
+  <li><strong>Adjust if needed.</strong> Tick “include end date” to count both the first and last day.</li>
+ </ol>
+ <p>Your dates stay on your device. Nothing is uploaded or stored, so the Date Calculator is private as well as free.</p>
+</section>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 BACK TO TOP BUTTON -->
-    <!-- ═══════════════════════════════════════════ -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+<section aria-labelledby="uses">
+ <h2 id="uses">Where people in India use a Date Calculator</h2>
+ <div class="cards">
+  <div class="card"><h3>Notice period</h3><p>Count the exact last working day for a 30, 60 or 90 day notice period from your resignation date.</p></div>
+  <div class="card"><h3>Rent and lease</h3><p>Check the days between agreement start and end, or the date a rent agreement of 11 months ends.</p></div>
+  <div class="card"><h3>Loan, EMI and FD tenure</h3><p>Find the maturity date of a fixed deposit, recurring deposit or loan by adding months and years.</p></div>
+  <div class="card"><h3>Pregnancy and due date</h3><p>Add 280 days to the first day of the last period for a general due-date estimate. Always confirm with your doctor.</p></div>
+  <div class="card"><h3>Passport and visa</h3><p>See how many days are left before a passport, visa or document expires, and plan renewal on time.</p></div>
+  <div class="card"><h3>Exams and admissions</h3><p>Count down to board exams, NEET, JEE, UPSC, CAT or SSC, and check age eligibility on a cut-off date.</p></div>
+  <div class="card"><h3>Project deadlines</h3><p>Add working weeks to a start date and see how many working days a sprint or project really has.</p></div>
+  <div class="card"><h3>Warranty and returns</h3><p>Check if a product is still within its 7, 10 or 30 day return window or its one-year warranty.</p></div>
+ </div>
+</section>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 JAVASCRIPT - FIXED MOBILE MENU & MORE -->
-    <!-- ═══════════════════════════════════════════ -->
-    <script>
-        (function() {
-            // ═══════════════════════════════════
-            // DOM ELEMENTS
-            // ═══════════════════════════════════
-            const header = document.getElementById('header');
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('navLinks');
-            const backToTop = document.getElementById('backToTop');
-            const faqItems = document.querySelectorAll('.faq-item');
-            const newsletterForm = document.getElementById('newsletterForm');
-            const categoryCards = document.querySelectorAll('.category-card');
+<section aria-labelledby="formula" id="formula">
+ <h2 id="formula-h">How the Date Calculator works</h2>
+ <p>Dates are converted to UTC calendar days, so daylight saving time or time zones never shift the answer. The calculator then follows these rules:</p>
+ <div class="formula">Total days = (end date − start date) ÷ 86,400,000 ms (+1 if end date is included)<br>Years, months, days = calendar difference, borrowing days from the previous month when needed<br>Working days = days from Monday to Friday in the range<br>Add months = move the month, then limit the day to the last day of that month (31 Jan + 1 month = 28/29 Feb)</div>
+ <p>Leap years are handled by the browser’s calendar: a year is a leap year when it divides by 4, except century years that do not divide by 400. So 2024 and 2028 are leap years, and 2100 is not.</p>
+</section>
 
-            // ═══════════════════════════════════
-            // HEADER SCROLL EFFECT
-            // ═══════════════════════════════════
-            let lastScroll = 0;
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset;
-                if (currentScroll > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-                if (currentScroll > 500) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-                lastScroll = currentScroll;
-            }, { passive: true });
+<section aria-labelledby="reference" id="reference">
+ <h2 id="reference-h">Date Calculator quick reference</h2>
+ <h3>Days in each month</h3>
+ <div class="scroll"><table>
+  <thead><tr><th>Month</th><th>Days</th><th>Month</th><th>Days</th></tr></thead>
+  <tbody>
+   <tr><td>January</td><td>31</td><td>July</td><td>31</td></tr>
+   <tr><td>February</td><td>28 (29 in leap year)</td><td>August</td><td>31</td></tr>
+   <tr><td>March</td><td>31</td><td>September</td><td>30</td></tr>
+   <tr><td>April</td><td>30</td><td>October</td><td>31</td></tr>
+   <tr><td>May</td><td>31</td><td>November</td><td>30</td></tr>
+   <tr><td>June</td><td>30</td><td>December</td><td>31</td></tr>
+  </tbody>
+ </table></div>
+ <h3 style="margin-top:1.4em">Common time periods</h3>
+ <div class="scroll"><table>
+  <thead><tr><th>Period</th><th>Days</th><th>Weeks</th></tr></thead>
+  <tbody>
+   <tr><td>1 month (average)</td><td>30.44</td><td>4.35</td></tr>
+   <tr><td>3 months (1 quarter)</td><td>90 to 92</td><td>about 13</td></tr>
+   <tr><td>6 months</td><td>181 to 184</td><td>about 26</td></tr>
+   <tr><td>1 year</td><td>365 (366 leap)</td><td>52.14</td></tr>
+   <tr><td>Indian financial year (1 Apr – 31 Mar)</td><td>365 or 366</td><td>52.14</td></tr>
+   <tr><td>Pregnancy (full term)</td><td>280</td><td>40</td></tr>
+  </tbody>
+ </table></div>
+ <p style="margin-top:1em">India’s financial year runs from 1 April to 31 March, so use the Date Calculator to count days left in the financial year for tax planning, advance tax and ITR deadlines.</p>
+</section>
 
-            // ═══════════════════════════════════
-            // MOBILE MENU TOGGLE (FIXED)
-            // ═══════════════════════════════════
-            function toggleMenu(force) {
-                const isOpen = force !== undefined ? force : !navLinks.classList.contains('open');
-                if (isOpen) {
-                    navLinks.classList.add('open');
-                    hamburger.setAttribute('aria-expanded', 'true');
-                    hamburger.innerHTML = '<i class="fas fa-times"></i>';
-                } else {
-                    navLinks.classList.remove('open');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            }
+<section aria-labelledby="faq" id="faq">
+ <h2 id="faq-h">Date Calculator FAQ</h2>
+ <details><summary>What is a Date Calculator?</summary><p>A Date Calculator is an online tool that finds the exact difference between two dates, or works out a new date by adding or subtracting days, months or years.</p></details>
+ <details><summary>How do I calculate the number of days between two dates?</summary><p>Enter the start date and end date, then click Calculate days. You get years, months, days, total days, weeks and working days instantly.</p></details>
+ <details><summary>How do I add days to a date?</summary><p>Open the Add or subtract tab, pick the start date, choose Add, enter the days, months or years, and click Calculate date to see the new date and weekday.</p></details>
+ <details><summary>Does the Date Calculator include the end date?</summary><p>Not by default. Tick “Include end date in the count” to count both the first and the last day.</p></details>
+ <details><summary>Does the Date Calculator handle leap years?</summary><p>Yes. Leap years, including 29 February, and the different lengths of months are handled automatically.</p></details>
+ <details><summary>How are working days counted?</summary><p>Working days count Monday to Friday. Saturdays, Sundays and public holidays are not adjusted for state-wise holidays, so check your local calendar for exact business days.</p></details>
+ <details><summary>How do I calculate my age in years, months and days?</summary><p>Open the Age tab, enter your date of birth, and the calculator shows your exact age, total days lived and days left until your next birthday.</p></details>
+ <details><summary>Is this Date Calculator free to use in India?</summary><p>Yes. It is completely free, needs no registration, uses the DD/MM/YYYY format and Indian Standard Time, and works on any phone or computer.</p></details>
+</section>
+</main>
 
-            // Click on hamburger
-            hamburger.addEventListener('click', function(e) {
-                e.stopPropagation(); // Prevent document click from immediately closing
-                toggleMenu();
-            });
+<footer class="site">
+ <div class="wrap">
+  <div class="fcols">
+   <div>
+    <h3>DateCalculator.in</h3>
+    <p>India’s free Date Calculator. Count days between dates, add or subtract time and find exact age. No signup, no ads tracking, works in light and dark mode.</p>
+   </div>
+   <div><h3>Calculators</h3><ul><li><a href="#calculator">Date Calculator</a></li><li><a href="#calculator" data-tab="t1">Days between dates</a></li><li><a href="#calculator" data-tab="t2">Add days to date</a></li><li><a href="#calculator" data-tab="t3">Age calculator</a></li></ul></div>
+   <div><h3>Learn</h3><ul><li><a href="#how">How to use</a></li><li><a href="#uses">Use cases</a></li><li><a href="#reference">Reference tables</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+   <div><h3>Company</h3><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/disclaimer/">Disclaimer</a></li></ul></div>
+  </div>
+  <p class="copy">© <span id="yr">2026</span> DateCalculator.in. Made in India. Results are for general guidance. Please verify important legal, medical or financial dates.</p>
+ </div>
+</footer>
 
-            // Touch support for mobile
-            hamburger.addEventListener('touchstart', function(e) {
-                e.preventDefault(); // Improve responsiveness on touch devices
-                e.stopPropagation();
-                toggleMenu();
-            });
+<script>
+(function(){
+ var $=function(i){return document.getElementById(i)},MS=864e5,root=document.documentElement;
 
-            // Close menu when clicking on a link inside
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    toggleMenu(false);
-                });
-            });
+ /* ---------- Theme: auto (system) / light / dark ---------- */
+ var modes=['auto','light','dark'],labels={auto:'◐ Auto',light:'☀ Light',dark:'☾ Dark'},tb=$('theme');
+ function cur(){var t=root.dataset.theme;return t==='light'||t==='dark'?t:'auto'}
+ function paint(){var m=cur();tb.textContent=labels[m];tb.setAttribute('aria-label','Theme: '+(m==='auto'?'automatic (system)':m)+'. Click to change')}
+ tb.onclick=function(){
+  var m=modes[(modes.indexOf(cur())+1)%3];
+  if(m==='auto')delete root.dataset.theme;else root.dataset.theme=m;
+  try{m==='auto'?localStorage.removeItem('dc-theme'):localStorage.setItem('dc-theme',m)}catch(e){}
+  paint();
+ };
+ paint();
 
-            // Close menu when clicking outside
-            document.addEventListener('click', function(e) {
-                if (navLinks.classList.contains('open') &&
-                    !hamburger.contains(e.target) &&
-                    !navLinks.contains(e.target)) {
-                    toggleMenu(false);
-                }
-            });
+ /* ---------- Hamburger menu ---------- */
+ var bg=$('burger'),nav=$('nav');
+ function menu(o){nav.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Close menu':'Open menu')}
+ bg.onclick=function(){menu(!nav.classList.contains('open'))};
+ nav.addEventListener('click',function(e){if(e.target.tagName==='A')menu(false)});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+ document.addEventListener('click',function(e){if(!nav.contains(e.target)&&!bg.contains(e.target))menu(false)});
 
-            // Also close on outside touch
-            document.addEventListener('touchstart', function(e) {
-                if (navLinks.classList.contains('open') &&
-                    !hamburger.contains(e.target) &&
-                    !navLinks.contains(e.target)) {
-                    toggleMenu(false);
-                }
-            }, { passive: true });
+ /* ---------- Date helpers ---------- */
+ function todayIST(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata'}).format(new Date())}
+ function parse(v){if(!v)return null;var a=v.split('-').map(Number);return new Date(Date.UTC(a[0],a[1]-1,a[2]))}
+ function iso(d){return d.toISOString().slice(0,10)}
+ function fmt(d){return new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(d)}
+ function dim(y,m){return new Date(Date.UTC(y,m+1,0)).getUTCDate()}
+ function pl(n,w){return n+' '+w+(n===1?'':'s')}
+ function nf(x){return x.toLocaleString('en-IN')}
+ function diff(a,b){
+  var y=b.getUTCFullYear()-a.getUTCFullYear(),m=b.getUTCMonth()-a.getUTCMonth(),d=b.getUTCDate()-a.getUTCDate();
+  if(d<0){m--;d+=dim(b.getUTCFullYear(),b.getUTCMonth()-1)}
+  if(m<0){y--;m+=12}
+  return{y:y,m:m,d:d};
+ }
+ function ymd(r){return [r.y&&pl(r.y,'year'),r.m&&pl(r.m,'month'),pl(r.d,'day')].filter(Boolean).join(', ')}
+ function workdays(a,b,inc){var c=0,t=a.getTime(),e=b.getTime()+(inc?MS:0);for(;t<e;t+=MS){var w=new Date(t).getUTCDay();if(w&&w!==6)c++}return c}
+ function isoWeek(d){var t=new Date(d.getTime()),n=(t.getUTCDay()+6)%7;t.setUTCDate(t.getUTCDate()-n+3);var f=new Date(Date.UTC(t.getUTCFullYear(),0,4));return 1+Math.round(((t-f)/MS-3+((f.getUTCDay()+6)%7))/7)}
+ function show(h){$('out').innerHTML=h}
+ function err(m){show('<p class="err">'+m+'</p>')}
+ function stats(a){return '<ul class="stats">'+a.map(function(x){return '<li><b>'+x[0]+'</b>'+x[1]+'</li>'}).join('')+'</ul>'}
 
-            // ═══════════════════════════════════
-            // FAQ ACCORDION
-            // ═══════════════════════════════════
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                question.addEventListener('click', () => {
-                    const isActive = item.classList.contains('active');
-                    faqItems.forEach(f => {
-                        f.classList.remove('active');
-                        f.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-                    });
-                    if (!isActive) {
-                        item.classList.add('active');
-                        question.setAttribute('aria-expanded', 'true');
-                    }
-                });
-                question.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        question.click();
-                    }
-                });
-            });
+ /* ---------- Days between ---------- */
+ $('go1').onclick=function(){
+  var a=parse($('d1').value),b=parse($('d2').value);
+  if(!a||!b)return err('Please select both a start date and an end date.');
+  var sw=false;if(a>b){var t=a;a=b;b=t;sw=true}
+  var inc=$('inc').checked,days=Math.round((b-a)/MS)+(inc?1:0),r=diff(a,inc?new Date(b.getTime()+MS):b);
+  show('<p class="big">'+nf(days)+' days</p><p>'+ymd(r)+' between '+fmt(a)+' and '+fmt(b)+(sw?' (dates were swapped)':'')+'.</p>'+
+   stats([[nf(days),'Total days'],[nf(Math.floor(days/7))+'w '+(days%7)+'d','Weeks'],[nf(workdays(a,b,inc)),'Working days'],[nf(days*24),'Hours'],[nf(days*1440),'Minutes']]));
+ };
 
-            // ═══════════════════════════════════
-            // BACK TO TOP
-            // ═══════════════════════════════════
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+ /* ---------- Add / subtract ---------- */
+ $('go2').onclick=function(){
+  var s=parse($('d4').value);if(!s)return err('Please select a start date.');
+  var k=+$('op').value,y=Math.max(0,+$('ay').value||0),m=Math.max(0,+$('am').value||0),d=Math.max(0,+$('ad').value||0);
+  var b=new Date(Date.UTC(s.getUTCFullYear()+k*y,s.getUTCMonth()+k*m,1)),
+      r=new Date(Date.UTC(b.getUTCFullYear(),b.getUTCMonth(),Math.min(s.getUTCDate(),dim(b.getUTCFullYear(),b.getUTCMonth()))));
+  r=new Date(r.getTime()+k*d*MS);
+  if(isNaN(r))return err('That date is out of range.');
+  show('<p class="big">'+fmt(r)+'</p><p>'+fmt(s)+(k>0?' plus ':' minus ')+([y&&pl(y,'year'),m&&pl(m,'month'),d&&pl(d,'day')].filter(Boolean).join(', ')||'0 days')+'.</p>'+
+   stats([[r.toLocaleDateString('en-GB',{timeZone:'UTC'}),'DD/MM/YYYY'],[nf(Math.round(Math.abs(r-s)/MS)),'Days apart'],['Week '+isoWeek(r),'ISO week of year']]));
+ };
+ document.querySelectorAll('.quick button').forEach(function(b){b.onclick=function(){$('ay').value=0;$('am').value=0;$('ad').value=b.dataset.q;$('go2').click()}});
 
-            // ═══════════════════════════════════
-            // NEWSLETTER FORM
-            // ═══════════════════════════════════
-            newsletterForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const emailInput = newsletterForm.querySelector('input[type="email"]');
-                const email = emailInput.value.trim();
-                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                    const btn = newsletterForm.querySelector('button');
-                    const originalText = btn.textContent;
-                    btn.textContent = '✅ Subscribed!';
-                    btn.style.background = '#00C853';
-                    btn.disabled = true;
-                    emailInput.value = '';
-                    console.log('📧 Newsletter subscription:', email);
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'newsletter_signup', {
-                            'event_category': 'engagement',
-                            'event_label': 'homepage_newsletter'
-                        });
-                    }
-                    setTimeout(() => {
-                        btn.textContent = originalText;
-                        btn.style.background = '';
-                        btn.disabled = false;
-                    }, 3000);
-                } else {
-                    emailInput.style.borderColor = '#FF1744';
-                    emailInput.focus();
-                    setTimeout(() => { emailInput.style.borderColor = ''; }, 2000);
-                }
-            });
+ /* ---------- Age ---------- */
+ $('go3').onclick=function(){
+  var a=parse($('dob').value),b=parse($('asof').value);
+  if(!a||!b)return err('Please select a date of birth and an "age on" date.');
+  if(a>b)return err('Date of birth must be before the "age on" date.');
+  var r=diff(a,b),nx=new Date(Date.UTC(b.getUTCFullYear(),a.getUTCMonth(),a.getUTCDate()));
+  if(nx<b)nx=new Date(Date.UTC(b.getUTCFullYear()+1,a.getUTCMonth(),a.getUTCDate()));
+  var days=Math.round((b-a)/MS);
+  show('<p class="big">'+pl(r.y,'year')+', '+pl(r.m,'month')+', '+pl(r.d,'day')+'</p><p>Born on '+fmt(a)+'.</p>'+
+   stats([[nf(days),'Days lived'],[nf(Math.floor(days/7)),'Weeks lived'],[nf(Math.round((nx-b)/MS)),'Days to next birthday'],[new Intl.DateTimeFormat('en-IN',{weekday:'long',timeZone:'UTC'}).format(nx),'Next birthday falls on']]));
+ };
 
-            // ═══════════════════════════════════
-            // INTERSECTION OBSERVER (ANALYTICS)
-            // ═══════════════════════════════════
-            if ('IntersectionObserver' in window) {
-                const observerOptions = { root: null, rootMargin: '0px', threshold: 0.3 };
-                const observerCallback = (entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const sectionId = entry.target.id || entry.target.getAttribute('aria-labelledby') || 'unknown';
-                            console.log('👁️ Section viewed:', sectionId);
-                            if (typeof gtag !== 'undefined') {
-                                gtag('event', 'section_view', {
-                                    'event_category': 'scroll_depth',
-                                    'event_label': sectionId
-                                });
-                            }
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                };
-                const observer = new IntersectionObserver(observerCallback, observerOptions);
-                document.querySelectorAll('.section, .hero, .newsletter-section').forEach(section => {
-                    observer.observe(section);
-                });
-            }
+ /* ---------- Tabs ---------- */
+ var tabs=[$('t1'),$('t2'),$('t3')],panels=[$('p1'),$('p2'),$('p3')];
+ function tab(i){tabs.forEach(function(x,j){x.setAttribute('aria-selected',i===j);panels[j].hidden=i!==j});$('out').innerHTML=''}
+ tabs.forEach(function(t,i){t.onclick=function(){tab(i)};t.onkeydown=function(e){if(e.key==='ArrowRight'){tab((i+1)%3);tabs[(i+1)%3].focus()}if(e.key==='ArrowLeft'){tab((i+2)%3);tabs[(i+2)%3].focus()}}});
+ document.querySelectorAll('[data-tab]').forEach(function(a){a.onclick=function(){tab(['t1','t2','t3'].indexOf(a.dataset.tab))}});
 
-            console.log('🚀 ConsumerAdvice.in - Mobile menu fixed & ready');
-        })();
-    </script>
+ /* ---------- Defaults and "today in India" ---------- */
+ var t=todayIST(),td=parse(t);
+ $('d1').value=t;$('d2').value=iso(new Date(td.getTime()+30*MS));$('d4').value=t;$('asof').value=t;$('yr').textContent=t.slice(0,4);
+ var ys=Date.UTC(td.getUTCFullYear(),0,0),doy=Math.round((td-ys)/MS),ly=dim(td.getUTCFullYear(),1)===29?366:365;
+ var fyEnd=Date.UTC(td.getUTCMonth()>=3?td.getUTCFullYear()+1:td.getUTCFullYear(),2,31);
+ $('today').innerHTML=[['Today (IST)',fmt(td)],['Day',doy+' of '+ly],['Week',isoWeek(td)],['Days left in year',ly-doy],['Days left in FY',Math.round((fyEnd-td)/MS)]].map(function(x){return '<li>'+x[0]+': <b>'+x[1]+'</b></li>'}).join('');
+})();
+</script>
 </body>
 </html>
