@@ -1,365 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en-IN" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- 🔥 ADVANCED SEO META TAGS FOR 404 PAGE -->
-    <!-- ═══════════════════════════════════════════ -->
-    <title>Page Not Found (404) | ConsumerAdvice.in - India's Consumer Guide</title>
-    <meta name="description" content="Oops! The page you're looking for doesn't exist. Explore our consumer advice, buying guides, complaint filing help, and expert reviews instead.">
-    <meta name="robots" content="noindex, follow">
-    <meta name="theme-color" content="#FF6B35">
-    <link rel="canonical" href="https://www.consumeradvice.in/404.html">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Page Not Found | ConsumerAdvice.in">
-    <meta property="og:description" content="Sorry, this page is missing. Discover helpful consumer resources on our homepage.">
-    <meta property="og:url" content="https://www.consumeradvice.in/404.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.consumeradvice.in/images/og-image.jpg">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="404 Not Found | ConsumerAdvice.in">
-    <meta name="twitter:description" content="This page isn't available. Visit our homepage for consumer advice and complaint help.">
-
-    <!-- JSON-LD Structured Data (WebSite only) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "@id": "https://www.consumeradvice.in/#website",
-            "url": "https://www.consumeradvice.in",
-            "name": "ConsumerAdvice.in",
-            "description": "India's #1 Consumer Rights & Complaint Guide",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://www.consumeradvice.in/search?q={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-            }
-        }
-    </script>
-
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <style>
-        :root {
-            --primary: #FF6B35;
-            --primary-dark: #E55A25;
-            --primary-light: #FFF0E8;
-            --secondary: #1A1A2E;
-            --secondary-light: #16213E;
-            --white: #FFFFFF;
-            --off-white: #F8F9FA;
-            --gray-100: #F5F5F5;
-            --gray-200: #EEEEEE;
-            --gray-500: #9E9E9E;
-            --gray-600: #757575;
-            --gray-700: #616161;
-            --gray-900: #212121;
-            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 40px rgba(0,0,0,0.12);
-            --radius-lg: 16px;
-            --radius-xl: 20px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Poppins', sans-serif;
-            --font-ui: 'Inter', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background: linear-gradient(135deg, #f8f9fa 0%, #fff5f0 100%);
-            color: var(--gray-900);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 24px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .error-container {
-            max-width: 700px;
-            width: 100%;
-            animation: fadeInUp 0.8s ease;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .error-icon {
-            font-size: 7rem;
-            margin-bottom: 20px;
-            display: block;
-            animation: float 3s ease-in-out infinite;
-            filter: drop-shadow(0 8px 20px rgba(255, 107, 53, 0.25));
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        h1 {
-            font-family: var(--font-heading);
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--secondary);
-            line-height: 1.2;
-            margin-bottom: 12px;
-            letter-spacing: -1px;
-        }
-
-        h1 span {
-            color: var(--primary);
-            position: relative;
-            display: inline-block;
-        }
-        h1 span::after {
-            content: '';
-            position: absolute;
-            bottom: 4px;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 107, 53, 0.2);
-            border-radius: 4px;
-            z-index: -1;
-        }
-
-        .subtitle {
-            font-size: 1.3rem;
-            color: var(--gray-600);
-            margin-bottom: 30px;
-            font-weight: 500;
-            line-height: 1.6;
-        }
-
-        .search-box {
-            display: flex;
-            max-width: 450px;
-            margin: 0 auto 35px;
-            background: var(--white);
-            border-radius: 50px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            border: 2px solid transparent;
-            transition: var(--transition);
-        }
-        .search-box:focus-within {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-xl);
-        }
-        .search-box input {
-            flex: 1;
-            border: none;
-            padding: 16px 22px;
-            font-size: 1rem;
-            font-family: var(--font-body);
-            outline: none;
-            color: var(--gray-900);
-        }
-        .search-box input::placeholder {
-            color: var(--gray-500);
-        }
-        .search-box button {
-            background: var(--primary);
-            color: var(--white);
-            border: none;
-            padding: 0 28px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .search-box button:hover {
-            background: var(--primary-dark);
-        }
-
-        .quick-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-
-        .quick-link {
-            background: var(--white);
-            padding: 12px 24px;
-            border-radius: 30px;
-            text-decoration: none;
-            color: var(--gray-700);
-            font-weight: 600;
-            font-size: 0.95rem;
-            font-family: var(--font-ui);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: var(--transition);
-            border: 2px solid transparent;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .quick-link:hover {
-            border-color: var(--primary);
-            background: var(--primary-light);
-            color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 18px rgba(255,107,53,0.2);
-        }
-
-        .btn-home {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--primary);
-            color: var(--white);
-            padding: 14px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 1rem;
-            font-family: var(--font-ui);
-            transition: var(--transition);
-            box-shadow: 0 8px 22px rgba(255,107,53,0.35);
-            margin-top: 10px;
-        }
-        .btn-home:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(255,107,53,0.5);
-        }
-
-        .footer-note {
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: var(--gray-500);
-            font-family: var(--font-ui);
-        }
-        .footer-note a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .footer-note a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.4rem;
-            }
-            .error-icon {
-                font-size: 5rem;
-            }
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            .search-box {
-                flex-direction: column;
-                border-radius: var(--radius-lg);
-            }
-            .search-box input {
-                border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-            }
-            .search-box button {
-                padding: 14px;
-                border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-                justify-content: center;
-            }
-            .quick-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            .quick-link {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<title>404 – Page Not Found | Date Calculator – DateCalculator.in</title>
+<meta name="description" content="This page could not be found. Use the free Date Calculator at DateCalculator.in to find days between dates, add or subtract days, and calculate age.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1426" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📅%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<script>try{var s=localStorage.getItem('dc-theme');if(s==='light'||s==='dark')document.documentElement.dataset.theme=s}catch(e){}</script>
+<style>
+:root{--ink:#14213d;--paper:#f3f6fb;--card:#fff;--line:#cfd8e8;--accent:#e8890c;--accent-ink:#2b1700;--muted:#4d5b78;
+ --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e9eefb;--paper:#0d1426;--card:#152039;--line:#2b3a5e;--accent:#f5a43a;--accent-ink:#1d1100;--muted:#9fb0d3}}
+:root[data-theme="dark"]{--ink:#e9eefb;--paper:#0d1426;--card:#152039;--line:#2b3a5e;--accent:#f5a43a;--accent-ink:#1d1100;--muted:#9fb0d3}
+:root[data-theme="light"]{color-scheme:light}:root[data-theme="dark"]{color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font:18px/1.7 var(--body);transition:background .25s,color .25s}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;opacity:.35}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px;width:100%}
+a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header.site{background:var(--paper);border-bottom:2px solid var(--ink);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;height:64px}
+.logo{font:800 1.2rem var(--head);text-decoration:none;margin-right:auto}
+.logo span{color:var(--accent)}
+.ibtn{font:600 .85rem var(--head);border:2px solid var(--ink);background:var(--card);color:var(--ink);border-radius:4px;padding:8px 11px;cursor:pointer;min-height:40px}
+main{flex:1;padding:40px 0}
+h1{font:800 clamp(5rem,26vw,11rem)/.9 var(--head);letter-spacing:-.05em;margin:0 0 .1em}
+h1 span{color:var(--accent)}
+h2{font:800 clamp(1.5rem,5vw,2.2rem)/1.15 var(--head);margin:0 0 .4em}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 1.4em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.btn{font:800 1.05rem var(--head);padding:13px 22px;border:2px solid var(--ink);border-radius:4px;background:var(--accent);color:var(--accent-ink);text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
+.btn.alt{background:var(--card);color:var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{display:block;border:2px solid var(--line);background:var(--card);border-radius:4px;padding:14px 16px;text-decoration:none}
+.card:hover{border-color:var(--accent)}
+.card b{display:block;font:800 1.05rem var(--head)}
+.card small{font:500 .9rem var(--head);color:var(--muted)}
+.path{display:inline-block;font:500 .9rem var(--head);background:var(--card);border:2px dashed var(--line);padding:4px 10px;border-radius:4px;word-break:break-all;margin-bottom:1em}
+footer.site{background:var(--card);color:var(--ink);border-top:2px solid var(--ink);padding:20px 0 calc(20px + env(safe-area-inset-bottom,0px));font:500 .9rem/1.6 var(--head);color:var(--muted)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body>
-    <div class="error-container">
-        <!-- Animated icon -->
-        <span class="error-icon" aria-hidden="true">🔍❓</span>
+<header class="site">
+ <div class="wrap bar">
+  <a class="logo" href="/" aria-label="DateCalculator.in home">Date<span>Calculator</span>.in</a>
+  <button class="ibtn" id="theme" type="button" aria-label="Theme: automatic (system). Click to change">◐ Auto</button>
+ </div>
+</header>
 
-        <!-- Main heading -->
-        <h1>Oops! <span>Page Not Found</span></h1>
+<main class="wrap">
+ <h1 aria-hidden="true">4<span>0</span>4</h1>
+ <h2>This date is not on our calendar</h2>
+ <p class="lead">The page you are looking for may have moved, been renamed, or never existed. Check the web address, or use the free Date Calculator below.</p>
+ <div class="path" id="path" hidden></div>
+ <div class="btns">
+  <a class="btn" href="/">Open Date Calculator</a>
+  <a class="btn alt" href="javascript:history.back()">Go back</a>
+ </div>
+ <div class="cards">
+  <a class="card" href="/#calculator"><b>Days between dates</b><small>Count days, weeks and working days</small></a>
+  <a class="card" href="/#calculator"><b>Add or subtract days</b><small>Find a date 30, 60 or 90 days away</small></a>
+  <a class="card" href="/#calculator"><b>Age calculator</b><small>Exact age in years, months and days</small></a>
+  <a class="card" href="/#faq"><b>Date Calculator FAQ</b><small>Quick answers to common questions</small></a>
+ </div>
+</main>
 
-        <!-- Subtitle -->
-        <p class="subtitle">
-            The page you're looking for doesn't exist or has been moved.<br>
-            But don't worry – we've got plenty of consumer advice waiting for you!
-        </p>
+<footer class="site">
+ <div class="wrap">© <span id="yr">2026</span> DateCalculator.in. Free Date Calculator for India.</div>
+</footer>
 
-        <!-- Search suggestion (simulates site search) -->
-        <form class="search-box" action="/search/" method="get" aria-label="Search ConsumerAdvice.in">
-            <input type="text" name="q" placeholder="Search for consumer tips, reviews, rights..." aria-label="Search query" autofocus>
-            <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
-        </form>
-
-        <!-- Quick helpful links -->
-        <div class="quick-links">
-            <a href="/consumer-rights/" class="quick-link"><i class="fas fa-balance-scale"></i> Know Your Rights</a>
-            <a href="/complaints/" class="quick-link"><i class="fas fa-file-signature"></i> File a Complaint</a>
-            <a href="/buying-guides/" class="quick-link"><i class="fas fa-shopping-cart"></i> Buying Guides</a>
-            <a href="/reviews/" class="quick-link"><i class="fas fa-star"></i> Product Reviews</a>
-            <a href="/blog/" class="quick-link"><i class="fas fa-newspaper"></i> Latest Articles</a>
-        </div>
-
-        <!-- Primary call to action -->
-        <a href="/" class="btn-home"><i class="fas fa-home"></i> Back to Homepage</a>
-
-        <!-- Footer note with contact -->
-        <p class="footer-note">
-            Still lost? <a href="/contact/">Contact our support team</a> or call <strong>1800-11-4000</strong> (National Consumer Helpline).
-        </p>
-    </div>
-
-    <!-- Simple script for search form handling (optional) -->
-    <script>
-        (function() {
-            // Pre-focus the search input already handled with autofocus
-            // If needed, you can redirect search to your actual search page
-            const form = document.querySelector('.search-box');
-            form.addEventListener('submit', function(e) {
-                const input = form.querySelector('input');
-                if (!input.value.trim()) {
-                    e.preventDefault();
-                    input.focus();
-                }
-            });
-            console.log('📄 404 page loaded – ready to help lost visitors.');
-        })();
-    </script>
+<script>
+(function(){
+ var root=document.documentElement,tb=document.getElementById('theme'),modes=['auto','light','dark'],labels={auto:'◐ Auto',light:'☀ Light',dark:'☾ Dark'};
+ function cur(){var t=root.dataset.theme;return t==='light'||t==='dark'?t:'auto'}
+ function paint(){var m=cur();tb.textContent=labels[m];tb.setAttribute('aria-label','Theme: '+(m==='auto'?'automatic (system)':m)+'. Click to change')}
+ tb.onclick=function(){
+  var m=modes[(modes.indexOf(cur())+1)%3];
+  if(m==='auto')delete root.dataset.theme;else root.dataset.theme=m;
+  try{m==='auto'?localStorage.removeItem('dc-theme'):localStorage.setItem('dc-theme',m)}catch(e){}
+  paint();
+ };
+ paint();
+ document.getElementById('yr').textContent=new Date().getFullYear();
+ var p=document.getElementById('path');
+ if(location.pathname&&location.pathname!=='/'){p.textContent=location.pathname;p.hidden=false}
+})();
+</script>
 </body>
 </html>
